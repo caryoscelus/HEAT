@@ -34,8 +34,8 @@
       "name": "gameover",
       "persistentUuid": "c5b8537e-f55a-42d5-934f-57e530b09f1b",
       "width": 399,
-      "x": 425,
-      "y": 309,
+      "x": 525,
+      "y": 356,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -94,7 +94,34 @@
       }
     ]
   },
-  "events": [],
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyFromTextReleased"
+          },
+          "parameters": [
+            "",
+            "\"Space\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Game Scene\"",
+            "no"
+          ]
+        }
+      ]
+    }
+  ],
   "layers": [
     {
       "ambientLightColorB": 200,
