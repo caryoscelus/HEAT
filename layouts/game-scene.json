@@ -1,13 +1,13 @@
 {
-  "b": 255,
+  "b": 0,
   "disableInputWhenNotFocused": true,
   "mangledName": "Game_32Scene",
   "name": "Game Scene",
-  "r": 255,
+  "r": 0,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "",
-  "v": 255,
+  "v": 0,
   "uiSettings": {
     "grid": false,
     "gridType": "rectangular",
@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5653158055126329,
+    "zoomFactor": 0.5468750000000023,
     "windowMask": false
   },
   "objectsGroups": [
@@ -48,8 +48,8 @@
       "name": "Player",
       "persistentUuid": "ebd4e918-fdc8-4c06-baef-2e0f46c2cfd5",
       "width": 0,
-      "x": 380,
-      "y": 273,
+      "x": 373,
+      "y": 372,
       "zOrder": 100,
       "numberProperties": [],
       "stringProperties": [],
@@ -132,7 +132,7 @@
       "name": "floor",
       "persistentUuid": "d0e5d8ee-24ea-45e9-832e-1b177adbe3eb",
       "width": 1114,
-      "x": -173,
+      "x": -171,
       "y": 210,
       "zOrder": 1,
       "numberProperties": [],
@@ -168,6 +168,22 @@
       "width": 854,
       "x": -52,
       "y": -209,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "escape_button",
+      "persistentUuid": "d252f328-9c83-4e7b-b82b-926470a054a8",
+      "width": 0,
+      "x": 802,
+      "y": 463,
       "zOrder": 103,
       "numberProperties": [],
       "stringProperties": [],
@@ -766,6 +782,48 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "escape_button",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "ESCAPE",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "167;19;19",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "ESCAPE",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -793,6 +851,9 @@
       },
       {
         "objectName": "wall"
+      },
+      {
+        "objectName": "escape_button"
       }
     ]
   },
@@ -814,21 +875,21 @@
       ]
     },
     {
-      "disabled": true,
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
+      "conditions": [
         {
           "type": {
-            "value": "ChangePlan"
+            "value": "Distance"
           },
           "parameters": [
             "Player",
-            "=",
-            "Player.Y()"
+            "door",
+            "20",
+            ""
           ]
         }
-      ]
+      ],
+      "actions": []
     }
   ],
   "layers": [
@@ -906,6 +967,10 @@
     {
       "name": "SmoothCamera",
       "type": "SmoothCamera::SmoothCamera"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "TopDownMovement",
