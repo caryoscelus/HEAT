@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5468750000000023,
+    "zoomFactor": 0.6897782140104533,
     "windowMask": false
   },
   "objectsGroups": [
@@ -41,16 +41,17 @@
   "instances": [
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 409,
       "keepRatio": true,
       "layer": "",
       "name": "Player",
       "persistentUuid": "ebd4e918-fdc8-4c06-baef-2e0f46c2cfd5",
-      "width": 0,
-      "x": 373,
-      "y": 372,
-      "zOrder": 100,
+      "width": 337,
+      "x": 453,
+      "y": 416,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -76,15 +77,15 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 330,
+      "height": 510,
       "keepRatio": true,
       "layer": "",
       "name": "door",
       "persistentUuid": "32fcbc14-5d7f-42f6-8204-6d9f9779d0e4",
-      "width": 128,
-      "x": 783,
-      "y": 142,
-      "zOrder": 102,
+      "width": 117,
+      "x": 787,
+      "y": 359,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -166,9 +167,9 @@
       "name": "escape_button",
       "persistentUuid": "d252f328-9c83-4e7b-b82b-926470a054a8",
       "width": 0,
-      "x": 802,
-      "y": 463,
-      "zOrder": 103,
+      "x": 789,
+      "y": 483,
+      "zOrder": 800,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -287,7 +288,7 @@
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.3333333333333333,
+              "timeBetweenFrames": 0.2,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
@@ -611,14 +612,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 70.5,
+                    "y": 700.5
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 174,
+                    "y": 795.5
                   },
                   "customCollisionMask": [
                     [
@@ -769,7 +770,7 @@
     },
     {
       "assetStoreId": "",
-      "bold": false,
+      "bold": true,
       "italic": false,
       "name": "escape_button",
       "smoothed": true,
@@ -788,11 +789,11 @@
         "r": 255
       },
       "content": {
-        "bold": false,
-        "isOutlineEnabled": true,
-        "isShadowEnabled": false,
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": true,
         "italic": false,
-        "outlineColor": "167;19;19",
+        "outlineColor": "0;0;0",
         "outlineThickness": 2,
         "shadowAngle": 90,
         "shadowBlurRadius": 2,
@@ -868,7 +869,7 @@
           "parameters": [
             "Player",
             "door",
-            "200",
+            "160",
             ""
           ]
         }
@@ -930,7 +931,7 @@
           "parameters": [
             "Player",
             "door",
-            "220",
+            "180",
             ""
           ]
         }
@@ -992,6 +993,39 @@
       "visibility": true,
       "cameras": [],
       "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "UI",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
     }
   ],
   "behaviorsSharedData": [
