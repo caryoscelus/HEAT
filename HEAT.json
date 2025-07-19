@@ -194,6 +194,22 @@
         "name": "door.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "floor-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "floor-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "wall-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "wall-1.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
