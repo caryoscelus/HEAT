@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5843784410740981,
+    "zoomFactor": 0.7876290101673854,
     "windowMask": false
   },
   "objectsGroups": [
@@ -51,7 +51,13 @@
       ]
     }
   ],
-  "variables": [],
+  "variables": [
+    {
+      "name": "roomTemperature",
+      "type": "number",
+      "value": 20
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -302,6 +308,40 @@
       "x": 1,
       "y": 261,
       "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2,
+      "height": 109,
+      "keepRatio": true,
+      "layer": "",
+      "name": "thermometer",
+      "persistentUuid": "ab34496b-7404-4865-9f9d-d59c882311c5",
+      "width": 81,
+      "x": 113,
+      "y": 86,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 12,
+      "keepRatio": true,
+      "layer": "",
+      "name": "thermometerValue",
+      "persistentUuid": "03abf5b4-8b62-4ce4-ac19-282d71a1bd90",
+      "width": 7,
+      "x": 153,
+      "y": 173,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1444,6 +1484,127 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "thermometer",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/thermometer.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 12,
+                        "y": 8
+                      },
+                      {
+                        "x": 31,
+                        "y": 8
+                      },
+                      {
+                        "x": 31,
+                        "y": 51
+                      },
+                      {
+                        "x": 12,
+                        "y": 51
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "thermometerValue",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "thermometer-value",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "thermometer-value",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 6,
+                    "y": 32
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 12,
+                        "y": 0
+                      },
+                      {
+                        "x": 12,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1483,6 +1644,12 @@
       },
       {
         "objectName": "landscape"
+      },
+      {
+        "objectName": "thermometer"
+      },
+      {
+        "objectName": "thermometerValue"
       }
     ]
   },
@@ -1824,6 +1991,23 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetHeight"
+          },
+          "parameters": [
+            "thermometerValue",
+            "Resizable",
+            "=",
+            "min(64, roomTemperature * 2)"
+          ]
+        }
+      ]
     }
   ],
   "layers": [

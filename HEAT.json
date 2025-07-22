@@ -322,6 +322,22 @@
         "name": "assets/player-tv.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/thermometer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/thermometer.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/thermometer-value.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "thermometer-value",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
