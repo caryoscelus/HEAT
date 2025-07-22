@@ -60,7 +60,7 @@
       "height": 409,
       "keepRatio": true,
       "layer": "",
-      "name": "Player",
+      "name": "player",
       "persistentUuid": "ebd4e918-fdc8-4c06-baef-2e0f46c2cfd5",
       "width": 337,
       "x": 453,
@@ -226,7 +226,7 @@
     {
       "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
-      "name": "Player",
+      "name": "player",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -1425,7 +1425,7 @@
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "Player"
+        "objectName": "player"
       },
       {
         "folderName": "Mobile Controls",
@@ -1467,6 +1467,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Player",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1480,7 +1481,7 @@
                 "value": "SeparateFromObjects"
               },
               "parameters": [
-                "Player",
+                "player",
                 "impassable",
                 ""
               ]
@@ -1508,7 +1509,7 @@
                 "value": "Distance"
               },
               "parameters": [
-                "Player",
+                "player",
                 "Action",
                 "180",
                 ""
@@ -1534,9 +1535,19 @@
                 "value": "Distance"
               },
               "parameters": [
-                "Player",
+                "player",
                 "Action",
                 "160",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "lockActions",
+                "False",
                 ""
               ]
             }
@@ -1650,7 +1661,7 @@
                 "value": "TopDownMovementBehavior::IgnoreDefaultControls"
               },
               "parameters": [
-                "Player",
+                "player",
                 "TopDownMovement",
                 "yes"
               ]
@@ -1661,6 +1672,16 @@
               },
               "parameters": [
                 "watchtv_button"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "lockActions",
+                "True",
+                ""
               ]
             }
           ]
@@ -1684,7 +1705,7 @@
                 "value": "TopDownMovementBehavior::IgnoreDefaultControls"
               },
               "parameters": [
-                "Player",
+                "player",
                 "TopDownMovement",
                 "no"
               ]
@@ -1695,6 +1716,16 @@
               },
               "parameters": [
                 "tvglow",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "lockActions",
+                "False",
                 ""
               ]
             }
