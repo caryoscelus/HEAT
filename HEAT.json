@@ -92,38 +92,6 @@
   "resources": {
     "resources": [
       {
-        "file": "assets/StartingPlayer.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\StartingPlayer.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/StartingGroundTilemap.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\StartingGroundTilemap.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/StartingWall.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\StartingWall.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/StartingObstacle.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\StartingObstacle.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/Flat dark joystick border.png",
         "kind": "image",
         "metadata": "",
@@ -300,62 +268,6 @@
         "userAdded": false
       },
       {
-        "file": "tvglow-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tvglow-1.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "tvglow-2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tvglow-2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "tvglow1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tvglow1.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "tvglow0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tvglow0.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "tvglow-3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tvglow-3.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "tvglow-7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tvglow-7.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "tvglow-4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tvglow-4.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "tvglow-0009.png",
         "kind": "image",
         "metadata": "",
@@ -364,82 +276,10 @@
         "userAdded": false
       },
       {
-        "file": "tvglow-5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tvglow-5.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "tvglow-0007.png",
         "kind": "image",
         "metadata": "",
         "name": "tvglow-0007.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "tvglow-10.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tvglow-10.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "tvglow-9.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tvglow-9.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "tvglow2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tvglow2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "tvglow3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tvglow3.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "tvglow4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tvglow4.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "tvglow5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tvglow5.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "tvglow-6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tvglow-6.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "tvglow-8.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tvglow-8.png",
         "smoothed": true,
         "userAdded": false
       }
