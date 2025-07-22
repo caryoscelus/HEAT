@@ -598,6 +598,16 @@
       "name": "lockActions",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "time",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "timeOfDay",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [
