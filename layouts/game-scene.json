@@ -1708,6 +1708,17 @@
                 "True",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "player",
+                "Animation",
+                "=",
+                "\"watch-tv\""
+              ]
             }
           ]
         },

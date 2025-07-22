@@ -314,6 +314,14 @@
         "name": "assets/skyline-night.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/player-tv.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/player-tv.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -544,6 +552,54 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "player-right-0009.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 25,
+                    "y": 253
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 118,
+                    "y": 241
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 83,
+                        "y": 234
+                      },
+                      {
+                        "x": 154,
+                        "y": 232
+                      },
+                      {
+                        "x": 157,
+                        "y": 263.5
+                      },
+                      {
+                        "x": 83,
+                        "y": 263.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "watch-tv",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/player-tv.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
