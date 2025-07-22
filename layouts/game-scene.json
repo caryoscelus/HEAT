@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.27253598967729475,
+    "zoomFactor": 0.39251611754882537,
     "windowMask": false
   },
   "objectsGroups": [
@@ -217,22 +217,6 @@
       "x": 282,
       "y": 339,
       "zOrder": 802,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "Effects",
-      "name": "tvglow",
-      "persistentUuid": "481a42a4-c7d5-452c-bf49-9d8cb6ae5044",
-      "width": 0,
-      "x": 0,
-      "y": 0,
-      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1479,89 +1463,107 @@
   },
   "events": [
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Player",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "value": "SeparateFromObjects"
-          },
-          "parameters": [
-            "Player",
-            "impassable",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "Distance"
-          },
-          "parameters": [
-            "Player",
-            "Action",
-            "160",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "Player",
+                "impassable",
+                ""
+              ]
+            }
           ]
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "Action",
-            ""
-          ]
-        }
-      ]
+      "parameters": []
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Action",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "inverted": true,
-            "value": "Distance"
-          },
-          "parameters": [
-            "Player",
-            "Action",
-            "180",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Distance"
+              },
+              "parameters": [
+                "Player",
+                "Action",
+                "180",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Action"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "Player",
+                "Action",
+                "160",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Action",
+                ""
+              ]
+            }
           ]
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "Action"
-          ]
-        }
-      ]
+      "parameters": []
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyFromTextReleased"
-          },
-          "parameters": [
-            "",
-            "\"Space\""
-          ]
-        }
-      ],
-      "actions": [],
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Door",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -1572,6 +1574,15 @@
               },
               "parameters": [
                 "escape_button"
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Space\""
               ]
             }
           ],
@@ -1587,10 +1598,31 @@
               ]
             }
           ]
-        },
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "TV",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Space\""
+              ]
+            },
             {
               "type": {
                 "value": "Visible"
@@ -1603,21 +1635,14 @@
           "actions": [
             {
               "type": {
-                "value": "Montre"
+                "value": "Create"
               },
               "parameters": [
+                "",
                 "tvglow",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeSprite"
-              },
-              "parameters": [
-                "tvglow",
-                "=",
-                "0"
+                "0",
+                "0",
+                "\"Effects\""
               ]
             },
             {
@@ -1629,67 +1654,54 @@
                 "TopDownMovement",
                 "yes"
               ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "watchtv_button"
+              ]
             }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "DepartScene"
-          },
-          "parameters": [
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "tvglow"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
-          },
-          "parameters": [
-            "tvglow",
-            "Animation"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "tvglow"
           ]
         },
         {
-          "type": {
-            "value": "TopDownMovementBehavior::IgnoreDefaultControls"
-          },
-          "parameters": [
-            "Player",
-            "TopDownMovement",
-            "no"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+              },
+              "parameters": [
+                "tvglow",
+                "Animation"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::IgnoreDefaultControls"
+              },
+              "parameters": [
+                "Player",
+                "TopDownMovement",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "tvglow",
+                ""
+              ]
+            }
           ]
         }
-      ]
+      ],
+      "parameters": []
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -1758,23 +1770,7 @@
       "renderingType": "",
       "visibility": true,
       "cameras": [],
-      "effects": [
-        {
-          "effectType": "Scene3D::HemisphereLight",
-          "name": "3D Light",
-          "doubleParameters": {
-            "elevation": 45,
-            "intensity": 1,
-            "rotation": 0
-          },
-          "stringParameters": {
-            "groundColor": "64;64;64",
-            "skyColor": "255;255;255",
-            "top": "Y-"
-          },
-          "booleanParameters": {}
-        }
-      ]
+      "effects": []
     },
     {
       "ambientLightColorB": 200,
@@ -1791,23 +1787,7 @@
       "renderingType": "",
       "visibility": true,
       "cameras": [],
-      "effects": [
-        {
-          "effectType": "Scene3D::HemisphereLight",
-          "name": "3D Light",
-          "doubleParameters": {
-            "elevation": 45,
-            "intensity": 1,
-            "rotation": 0
-          },
-          "stringParameters": {
-            "groundColor": "64;64;64",
-            "skyColor": "255;255;255",
-            "top": "Y-"
-          },
-          "booleanParameters": {}
-        }
-      ]
+      "effects": []
     }
   ],
   "behaviorsSharedData": [
