@@ -580,7 +580,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "black-square",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -590,7 +590,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite",
+                  "image": "black-square",
                   "points": [],
                   "originPoint": {
                     "name": "origine",

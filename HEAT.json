@@ -116,7 +116,7 @@
         }
       },
       {
-        "file": "player-right-0000.png",
+        "file": "assets/player-right-0000.png",
         "kind": "image",
         "metadata": "",
         "name": "player-right-0000.png",
@@ -124,7 +124,7 @@
         "userAdded": false
       },
       {
-        "file": "player-right-0003.png",
+        "file": "assets/player-right-0003.png",
         "kind": "image",
         "metadata": "",
         "name": "player-right-0003.png",
@@ -132,7 +132,7 @@
         "userAdded": false
       },
       {
-        "file": "player-right-0006.png",
+        "file": "assets/player-right-0006.png",
         "kind": "image",
         "metadata": "",
         "name": "player-right-0006.png",
@@ -140,7 +140,7 @@
         "userAdded": false
       },
       {
-        "file": "player-right-0009.png",
+        "file": "assets/player-right-0009.png",
         "kind": "image",
         "metadata": "",
         "name": "player-right-0009.png",
@@ -148,15 +148,15 @@
         "userAdded": false
       },
       {
-        "file": "assets/NewSprite.png",
+        "file": "assets/black-square.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite",
+        "name": "black-square",
         "smoothed": true,
         "userAdded": false
       },
       {
-        "file": "door.png",
+        "file": "assets/door.png",
         "kind": "image",
         "metadata": "",
         "name": "door.png",
@@ -164,7 +164,7 @@
         "userAdded": false
       },
       {
-        "file": "floor-1.png",
+        "file": "assets/floor-1.png",
         "kind": "image",
         "metadata": "",
         "name": "floor-1.png",
@@ -172,7 +172,7 @@
         "userAdded": false
       },
       {
-        "file": "wall-1.png",
+        "file": "assets/wall-1.png",
         "kind": "image",
         "metadata": "",
         "name": "wall-1.png",
@@ -180,7 +180,7 @@
         "userAdded": false
       },
       {
-        "file": "sofa.png",
+        "file": "assets/sofa.png",
         "kind": "image",
         "metadata": "",
         "name": "sofa.png",
@@ -188,7 +188,7 @@
         "userAdded": false
       },
       {
-        "file": "tvglow-0000.png",
+        "file": "assets/tvglow-0000.png",
         "kind": "image",
         "metadata": "",
         "name": "tvglow-0000.png",
@@ -196,7 +196,7 @@
         "userAdded": false
       },
       {
-        "file": "tvglow-0001.png",
+        "file": "assets/tvglow-0001.png",
         "kind": "image",
         "metadata": "",
         "name": "tvglow-0001.png",
@@ -204,7 +204,7 @@
         "userAdded": false
       },
       {
-        "file": "tvglow-0002.png",
+        "file": "assets/tvglow-0002.png",
         "kind": "image",
         "metadata": "",
         "name": "tvglow-0002.png",
@@ -212,7 +212,7 @@
         "userAdded": false
       },
       {
-        "file": "tvglow-0003.png",
+        "file": "assets/tvglow-0003.png",
         "kind": "image",
         "metadata": "",
         "name": "tvglow-0003.png",
@@ -220,7 +220,7 @@
         "userAdded": false
       },
       {
-        "file": "tvglow-0004.png",
+        "file": "assets/tvglow-0004.png",
         "kind": "image",
         "metadata": "",
         "name": "tvglow-0004.png",
@@ -228,7 +228,7 @@
         "userAdded": false
       },
       {
-        "file": "tvglow-0005.png",
+        "file": "assets/tvglow-0005.png",
         "kind": "image",
         "metadata": "",
         "name": "tvglow-0005.png",
@@ -236,7 +236,7 @@
         "userAdded": false
       },
       {
-        "file": "tvglow-0006.png",
+        "file": "assets/tvglow-0006.png",
         "kind": "image",
         "metadata": "",
         "name": "tvglow-0006.png",
@@ -244,7 +244,7 @@
         "userAdded": false
       },
       {
-        "file": "tvglow-0008.png",
+        "file": "assets/tvglow-0008.png",
         "kind": "image",
         "metadata": "",
         "name": "tvglow-0008.png",
@@ -252,7 +252,7 @@
         "userAdded": false
       },
       {
-        "file": "tvglow-0010.png",
+        "file": "assets/tvglow-0010.png",
         "kind": "image",
         "metadata": "",
         "name": "tvglow-0010.png",
@@ -260,7 +260,7 @@
         "userAdded": false
       },
       {
-        "file": "tvglow-0011.png",
+        "file": "assets/tvglow-0011.png",
         "kind": "image",
         "metadata": "",
         "name": "tvglow-0011.png",
@@ -268,7 +268,7 @@
         "userAdded": false
       },
       {
-        "file": "tvglow-0009.png",
+        "file": "assets/tvglow-0009.png",
         "kind": "image",
         "metadata": "",
         "name": "tvglow-0009.png",
@@ -276,7 +276,7 @@
         "userAdded": false
       },
       {
-        "file": "tvglow-0007.png",
+        "file": "assets/tvglow-0007.png",
         "kind": "image",
         "metadata": "",
         "name": "tvglow-0007.png",
