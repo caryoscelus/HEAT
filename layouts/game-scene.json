@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.39251611754882537,
+    "zoomFactor": 0.5843784410740981,
     "windowMask": false
   },
   "objectsGroups": [
@@ -63,8 +63,8 @@
       "name": "player",
       "persistentUuid": "ebd4e918-fdc8-4c06-baef-2e0f46c2cfd5",
       "width": 337,
-      "x": 453,
-      "y": 416,
+      "x": 481,
+      "y": 495,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -80,8 +80,8 @@
       "name": "wall_out",
       "persistentUuid": "f10193f9-b340-4bb5-a328-fc2f7437079f",
       "width": 1528,
-      "x": -201,
-      "y": 652,
+      "x": -173,
+      "y": 731,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
@@ -97,8 +97,8 @@
       "name": "door",
       "persistentUuid": "32fcbc14-5d7f-42f6-8204-6d9f9779d0e4",
       "width": 117,
-      "x": 787,
-      "y": 359,
+      "x": 815,
+      "y": 438,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -114,8 +114,8 @@
       "name": "wall_out",
       "persistentUuid": "55e55d41-974a-4d65-acaa-f6709d74497d",
       "width": 242,
-      "x": 827,
-      "y": 198,
+      "x": 855,
+      "y": 277,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
@@ -131,8 +131,8 @@
       "name": "floor",
       "persistentUuid": "d0e5d8ee-24ea-45e9-832e-1b177adbe3eb",
       "width": 1114,
-      "x": -171,
-      "y": 210,
+      "x": -143,
+      "y": 289,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -148,8 +148,8 @@
       "name": "wall_out",
       "persistentUuid": "c5f4a715-6a60-4b33-94cd-6548c46655cd",
       "width": 271,
-      "x": -299,
-      "y": 64,
+      "x": -271,
+      "y": 143,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
@@ -165,8 +165,8 @@
       "name": "wall",
       "persistentUuid": "ff4dcb4f-6226-4c52-a8e9-92ae6396f0f8",
       "width": 854,
-      "x": -52,
-      "y": -209,
+      "x": -24,
+      "y": -130,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -181,8 +181,8 @@
       "name": "escape_button",
       "persistentUuid": "d252f328-9c83-4e7b-b82b-926470a054a8",
       "width": 0,
-      "x": 789,
-      "y": 483,
+      "x": 817,
+      "y": 562,
       "zOrder": 800,
       "numberProperties": [],
       "stringProperties": [],
@@ -198,8 +198,8 @@
       "name": "sofa",
       "persistentUuid": "04584897-4f8c-449a-a2a8-fabbad6ebf19",
       "width": 363,
-      "x": 165,
-      "y": 157,
+      "x": 193,
+      "y": 236,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -214,279 +214,100 @@
       "name": "watchtv_button",
       "persistentUuid": "711fb1cc-1bac-4d9d-af86-a94012e700a5",
       "width": 0,
-      "x": 282,
-      "y": 339,
+      "x": 310,
+      "y": 418,
       "zOrder": 802,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 661,
+      "keepRatio": true,
+      "layer": "Sky",
+      "name": "landscape",
+      "persistentUuid": "4d10fea1-7969-428f-9b2b-085ecd08c470",
+      "width": 1176,
+      "x": -45,
+      "y": -106,
+      "zOrder": 803,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 360,
+      "customSize": true,
+      "depth": 2,
+      "height": 1164,
+      "keepRatio": true,
+      "layer": "",
+      "name": "wall_out",
+      "persistentUuid": "419a2724-ecf0-4983-b27b-c43c2734a295",
+      "width": 722,
+      "x": 947,
+      "y": -342,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 360,
+      "customSize": true,
+      "depth": 2,
+      "height": 608,
+      "keepRatio": true,
+      "layer": "",
+      "name": "wall_out",
+      "persistentUuid": "5c52f93d-0e97-43d9-b50e-8d916960b298",
+      "width": 574,
+      "x": 493,
+      "y": -253,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 360,
+      "customSize": true,
+      "depth": 2,
+      "height": 608,
+      "keepRatio": true,
+      "layer": "",
+      "name": "wall_out",
+      "persistentUuid": "08ace492-3cd0-4dd5-bd89-5f7b28895606",
+      "width": 574,
+      "x": -345,
+      "y": -234,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 360,
+      "customSize": true,
+      "depth": 2,
+      "height": 107,
+      "keepRatio": true,
+      "layer": "",
+      "name": "wall_out",
+      "persistentUuid": "6ee64123-a9fb-4164-8c77-4b5ac44ce17c",
+      "width": 377,
+      "x": 1,
+      "y": 261,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     }
   ],
   "objects": [
-    {
-      "adaptCollisionMaskAutomatically": false,
-      "assetStoreId": "",
-      "name": "player",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "isFolded": true,
-          "name": "SmoothCamera",
-          "type": "SmoothCamera::SmoothCamera",
-          "LeftwardSpeed": 0.9,
-          "RightwardSpeed": 0.9,
-          "UpwardSpeed": 0.9,
-          "DownwardSpeed": 0.9,
-          "FollowOnX": true,
-          "FollowOnY": false,
-          "FollowFreeAreaLeft": 0,
-          "FollowFreeAreaRight": 0,
-          "FollowFreeAreaTop": 0,
-          "FollowFreeAreaBottom": 0,
-          "CameraOffsetX": 0,
-          "CameraOffsetY": 0,
-          "CameraDelay": 0,
-          "ForecastTime": 0,
-          "ForecastHistoryDuration": 0,
-          "LogLeftwardSpeed": 2.0247e-320,
-          "LogRightwardSpeed": 2.0247e-320,
-          "LogDownwardSpeed": 2.0247e-320,
-          "LogUpwardSpeed": 2.0247e-320,
-          "DelayedCenterX": 2.0247e-320,
-          "DelayedCenterY": 2.0247e-320,
-          "ForecastHistoryMeanX": 2.0247e-320,
-          "ForecastHistoryMeanY": 2.0247e-320,
-          "ForecastHistoryVarianceX": 2.0247e-320,
-          "ForecastHistoryCovariance": 2.0247e-320,
-          "ForecastHistoryLinearA": 2.0247e-320,
-          "ForecastHistoryLinearB": 2.0247e-320,
-          "ForecastedX": 2.0247e-320,
-          "ForecastedY": 2.0247e-320,
-          "ProjectedNewestX": 2.0247e-320,
-          "ProjectedNewestY": 2.0247e-320,
-          "ProjectedOldestX": 2.0247e-320,
-          "ProjectedOldestY": 2.0247e-320,
-          "ForecastHistoryVarianceY": 2.0247e-320,
-          "Index": 2.0247e-320,
-          "CameraDelayCatchUpSpeed": 0,
-          "CameraExtraDelay": 2.0247e-320,
-          "WaitingSpeedXMax": 2.0247e-320,
-          "WaitingSpeedYMax": 2.0247e-320,
-          "WaitingEnd": 2.0247e-320,
-          "CameraDelayCatchUpDuration": 2.0247e-320,
-          "LeftwardSpeedMax": 9000,
-          "RightwardSpeedMax": 9000,
-          "UpwardSpeedMax": 9000,
-          "DownwardSpeedMax": 9000,
-          "OldX": 9000.000000007454,
-          "OldY": 9000.000000007454,
-          "IsCalledManually": false
-        },
-        {
-          "acceleration": 99999,
-          "deceleration": 99999,
-          "isFolded": true,
-          "name": "TopDownMovement",
-          "rotateObject": false,
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-          "maxSpeed": 300,
-          "angularMaxSpeed": 300,
-          "allowDiagonals": true,
-          "angleOffset": 0,
-          "customIsometryAngle": 30,
-          "ignoreDefaultControls": false,
-          "movementAngleOffset": 0,
-          "viewpoint": "TopDown"
-        },
-        {
-          "isFolded": true,
-          "name": "TopDownMovementAnimator",
-          "type": "TopDownMovementAnimator::TopDownMovementAnimator",
-          "Animation": "Animation",
-          "TopDownMovement": "TopDownMovement",
-          "IsScalingAnimation": true,
-          "IsPausingAnimation": true,
-          "AnimationName": "walk",
-          "DirectionCount": 0,
-          "AngleOffset": 0,
-          "AnimationDirection": 0
-        },
-        {
-          "isFolded": true,
-          "name": "TopDownMultitouchMapper",
-          "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper",
-          "TopDownMovement": "TopDownMovement",
-          "ControllerIdentifier": 1,
-          "JoystickIdentifier": "Primary",
-          "StickMode": "Analog"
-        },
-        {
-          "name": "YSort",
-          "type": "YSort::YSort"
-        }
-      ],
-      "animations": [
-        {
-          "name": "walk1",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.2,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "player-right-0000.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 25,
-                    "y": 253
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 118,
-                    "y": 241
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 83,
-                        "y": 234
-                      },
-                      {
-                        "x": 154,
-                        "y": 232
-                      },
-                      {
-                        "x": 157,
-                        "y": 263.5
-                      },
-                      {
-                        "x": 83,
-                        "y": 263.5
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "player-right-0003.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 25,
-                    "y": 253
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 118,
-                    "y": 241
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 83,
-                        "y": 234
-                      },
-                      {
-                        "x": 154,
-                        "y": 232
-                      },
-                      {
-                        "x": 157,
-                        "y": 263.5
-                      },
-                      {
-                        "x": 83,
-                        "y": 263.5
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "player-right-0006.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 25,
-                    "y": 253
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 118,
-                    "y": 241
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 83,
-                        "y": 234
-                      },
-                      {
-                        "x": 154,
-                        "y": 232
-                      },
-                      {
-                        "x": 157,
-                        "y": 263.5
-                      },
-                      {
-                        "x": 83,
-                        "y": 263.5
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "player-right-0009.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 25,
-                    "y": 253
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 118,
-                    "y": 241
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 83,
-                        "y": 234
-                      },
-                      {
-                        "x": 154,
-                        "y": 232
-                      },
-                      {
-                        "x": 157,
-                        "y": 263.5
-                      },
-                      {
-                        "x": 83,
-                        "y": 263.5
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
     {
       "assetStoreId": "e71bd69f896d6c7531b48c65ceb5da25071d4fbdeb518aeceecba8d21f34ed8d",
       "name": "Joystick",
@@ -1419,14 +1240,215 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "landscape",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "morning",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/skyline-morning.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 1080
+                      },
+                      {
+                        "x": 0,
+                        "y": 1080
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "day",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/skyline-day.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 1080
+                      },
+                      {
+                        "x": 0,
+                        "y": 1080
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "evening",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/skyline-evening.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 1080
+                      },
+                      {
+                        "x": 0,
+                        "y": 1080
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "night",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/skyline-night.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 1080
+                      },
+                      {
+                        "x": 0,
+                        "y": 1080
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
-      {
-        "objectName": "player"
-      },
       {
         "folderName": "Mobile Controls",
         "children": [
@@ -1458,6 +1480,9 @@
       },
       {
         "objectName": "tvglow"
+      },
+      {
+        "objectName": "landscape"
       }
     ]
   },
@@ -1741,6 +1766,23 @@
     }
   ],
   "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Sky",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
     {
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,

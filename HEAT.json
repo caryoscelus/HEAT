@@ -282,13 +282,315 @@
         "name": "tvglow-0007.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/skyline-day.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/skyline-day.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/skyline-morning.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/skyline-morning.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/skyline-evening.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/skyline-evening.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/skyline-night.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/skyline-night.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
   },
-  "objects": [],
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "player",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "isFolded": true,
+          "name": "SmoothCamera",
+          "type": "SmoothCamera::SmoothCamera",
+          "LeftwardSpeed": 0.9,
+          "RightwardSpeed": 0.9,
+          "UpwardSpeed": 0.9,
+          "DownwardSpeed": 0.9,
+          "FollowOnX": true,
+          "FollowOnY": false,
+          "FollowFreeAreaLeft": 0,
+          "FollowFreeAreaRight": 0,
+          "FollowFreeAreaTop": 0,
+          "FollowFreeAreaBottom": 0,
+          "CameraOffsetX": 0,
+          "CameraOffsetY": 0,
+          "CameraDelay": 0,
+          "ForecastTime": 0,
+          "ForecastHistoryDuration": 0,
+          "LogLeftwardSpeed": 2.0247e-320,
+          "LogRightwardSpeed": 2.0247e-320,
+          "LogDownwardSpeed": 2.0247e-320,
+          "LogUpwardSpeed": 2.0247e-320,
+          "DelayedCenterX": 2.0247e-320,
+          "DelayedCenterY": 2.0247e-320,
+          "ForecastHistoryMeanX": 2.0247e-320,
+          "ForecastHistoryMeanY": 2.0247e-320,
+          "ForecastHistoryVarianceX": 2.0247e-320,
+          "ForecastHistoryCovariance": 2.0247e-320,
+          "ForecastHistoryLinearA": 2.0247e-320,
+          "ForecastHistoryLinearB": 2.0247e-320,
+          "ForecastedX": 2.0247e-320,
+          "ForecastedY": 2.0247e-320,
+          "ProjectedNewestX": 2.0247e-320,
+          "ProjectedNewestY": 2.0247e-320,
+          "ProjectedOldestX": 2.0247e-320,
+          "ProjectedOldestY": 2.0247e-320,
+          "ForecastHistoryVarianceY": 2.0247e-320,
+          "Index": 2.0247e-320,
+          "CameraDelayCatchUpSpeed": 0,
+          "CameraExtraDelay": 2.0247e-320,
+          "WaitingSpeedXMax": 2.0247e-320,
+          "WaitingSpeedYMax": 2.0247e-320,
+          "WaitingEnd": 2.0247e-320,
+          "CameraDelayCatchUpDuration": 2.0247e-320,
+          "LeftwardSpeedMax": 9000,
+          "RightwardSpeedMax": 9000,
+          "UpwardSpeedMax": 9000,
+          "DownwardSpeedMax": 9000,
+          "OldX": 9000.000000007454,
+          "OldY": 9000.000000007454,
+          "IsCalledManually": false
+        },
+        {
+          "isFolded": true,
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "acceleration": 99999,
+          "deceleration": 99999,
+          "rotateObject": false,
+          "maxSpeed": 300,
+          "angularMaxSpeed": 300,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "customIsometryAngle": 30,
+          "ignoreDefaultControls": false,
+          "movementAngleOffset": 0,
+          "viewpoint": "TopDown"
+        },
+        {
+          "isFolded": true,
+          "name": "TopDownMovementAnimator",
+          "type": "TopDownMovementAnimator::TopDownMovementAnimator",
+          "Animation": "Animation",
+          "TopDownMovement": "TopDownMovement",
+          "IsScalingAnimation": true,
+          "IsPausingAnimation": true,
+          "AnimationName": "walk",
+          "DirectionCount": 0,
+          "AngleOffset": 0,
+          "AnimationDirection": 0
+        },
+        {
+          "isFolded": true,
+          "name": "TopDownMultitouchMapper",
+          "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper",
+          "TopDownMovement": "TopDownMovement",
+          "ControllerIdentifier": 1,
+          "JoystickIdentifier": "Primary",
+          "StickMode": "Analog"
+        },
+        {
+          "name": "YSort",
+          "type": "YSort::YSort"
+        }
+      ],
+      "animations": [
+        {
+          "name": "walk1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.2,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "player-right-0000.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 25,
+                    "y": 253
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 118,
+                    "y": 241
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 83,
+                        "y": 234
+                      },
+                      {
+                        "x": 154,
+                        "y": 232
+                      },
+                      {
+                        "x": 157,
+                        "y": 263.5
+                      },
+                      {
+                        "x": 83,
+                        "y": 263.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "player-right-0003.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 25,
+                    "y": 253
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 118,
+                    "y": 241
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 83,
+                        "y": 234
+                      },
+                      {
+                        "x": 154,
+                        "y": 232
+                      },
+                      {
+                        "x": 157,
+                        "y": 263.5
+                      },
+                      {
+                        "x": 83,
+                        "y": 263.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "player-right-0006.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 25,
+                    "y": 253
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 118,
+                    "y": 241
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 83,
+                        "y": 234
+                      },
+                      {
+                        "x": 154,
+                        "y": 232
+                      },
+                      {
+                        "x": 157,
+                        "y": 263.5
+                      },
+                      {
+                        "x": 83,
+                        "y": 263.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "player-right-0009.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 25,
+                    "y": 253
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 118,
+                    "y": 241
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 83,
+                        "y": 234
+                      },
+                      {
+                        "x": 154,
+                        "y": 232
+                      },
+                      {
+                        "x": 157,
+                        "y": 263.5
+                      },
+                      {
+                        "x": 83,
+                        "y": 263.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "objectsFolderStructure": {
-    "folderName": "__ROOT"
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "player"
+      }
+    ]
   },
   "objectsGroups": [],
   "variables": [
