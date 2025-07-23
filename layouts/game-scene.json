@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.7876290101673854,
+    "zoomFactor": 0.5117784035210248,
     "windowMask": false
   },
   "objectsGroups": [
@@ -36,6 +36,9 @@
         },
         {
           "name": "sofa"
+        },
+        {
+          "name": "bed"
         }
       ]
     },
@@ -47,6 +50,9 @@
         },
         {
           "name": "watchtv_button"
+        },
+        {
+          "name": "sleep_button"
         }
       ]
     }
@@ -85,8 +91,8 @@
       "layer": "",
       "name": "wall_out",
       "persistentUuid": "f10193f9-b340-4bb5-a328-fc2f7437079f",
-      "width": 1528,
-      "x": -173,
+      "width": 1780,
+      "x": -425,
       "y": 731,
       "zOrder": 0,
       "numberProperties": [],
@@ -103,8 +109,8 @@
       "name": "door",
       "persistentUuid": "32fcbc14-5d7f-42f6-8204-6d9f9779d0e4",
       "width": 117,
-      "x": 815,
-      "y": 438,
+      "x": 789,
+      "y": 443,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -114,14 +120,14 @@
       "angle": 338,
       "customSize": true,
       "depth": 1,
-      "height": 607,
+      "height": 703,
       "keepRatio": true,
       "layer": "",
       "name": "wall_out",
       "persistentUuid": "55e55d41-974a-4d65-acaa-f6709d74497d",
-      "width": 242,
-      "x": 855,
-      "y": 277,
+      "width": 280,
+      "x": 800,
+      "y": 178,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
@@ -136,8 +142,8 @@
       "layer": "",
       "name": "floor",
       "persistentUuid": "d0e5d8ee-24ea-45e9-832e-1b177adbe3eb",
-      "width": 1114,
-      "x": -143,
+      "width": 1318,
+      "x": -347,
       "y": 289,
       "zOrder": 1,
       "numberProperties": [],
@@ -147,16 +153,16 @@
     {
       "angle": 22,
       "customSize": true,
-      "depth": 1,
-      "height": 656,
+      "depth": 2,
+      "height": 682,
       "keepRatio": true,
       "layer": "",
       "name": "wall_out",
       "persistentUuid": "c5f4a715-6a60-4b33-94cd-6548c46655cd",
-      "width": 271,
-      "x": -271,
-      "y": 143,
-      "zOrder": 0,
+      "width": 282,
+      "x": -523,
+      "y": 262,
+      "zOrder": 803,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -170,8 +176,8 @@
       "layer": "",
       "name": "wall",
       "persistentUuid": "ff4dcb4f-6226-4c52-a8e9-92ae6396f0f8",
-      "width": 854,
-      "x": -24,
+      "width": 1034,
+      "x": -204,
       "y": -130,
       "zOrder": 1,
       "numberProperties": [],
@@ -187,8 +193,8 @@
       "name": "escape_button",
       "persistentUuid": "d252f328-9c83-4e7b-b82b-926470a054a8",
       "width": 0,
-      "x": 817,
-      "y": 562,
+      "x": 791,
+      "y": 567,
       "zOrder": 800,
       "numberProperties": [],
       "stringProperties": [],
@@ -288,8 +294,8 @@
       "name": "wall_out",
       "persistentUuid": "08ace492-3cd0-4dd5-bd89-5f7b28895606",
       "width": 574,
-      "x": -345,
-      "y": -234,
+      "x": -496,
+      "y": -242,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
@@ -304,8 +310,8 @@
       "layer": "",
       "name": "wall_out",
       "persistentUuid": "6ee64123-a9fb-4164-8c77-4b5ac44ce17c",
-      "width": 377,
-      "x": 1,
+      "width": 526,
+      "x": -148,
       "y": 261,
       "zOrder": 0,
       "numberProperties": [],
@@ -322,8 +328,8 @@
       "name": "thermometer",
       "persistentUuid": "ab34496b-7404-4865-9f9d-d59c882311c5",
       "width": 81,
-      "x": 113,
-      "y": 86,
+      "x": 569,
+      "y": 61,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -339,9 +345,42 @@
       "name": "thermometerValue",
       "persistentUuid": "03abf5b4-8b62-4ce4-ac19-282d71a1bd90",
       "width": 7,
-      "x": 153,
-      "y": 173,
+      "x": 609,
+      "y": 148,
       "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 314,
+      "keepRatio": true,
+      "layer": "",
+      "name": "bed",
+      "persistentUuid": "b457288a-9707-4794-9587-c3d24806c75f",
+      "width": 320,
+      "x": -15,
+      "y": 533,
+      "zOrder": 804,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sleep_button",
+      "persistentUuid": "bac8bd56-f654-4750-8bc9-19a8dc333474",
+      "width": 0,
+      "x": -41,
+      "y": 546,
+      "zOrder": 805,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1605,6 +1644,113 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "bed",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "YSort",
+          "type": "YSort::YSort"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/bed.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 235.5,
+                    "y": 421
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 119.5,
+                        "y": 61
+                      },
+                      {
+                        "x": 379.5,
+                        "y": 67
+                      },
+                      {
+                        "x": 448,
+                        "y": 431
+                      },
+                      {
+                        "x": 21,
+                        "y": 431
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "sleep_button",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "SLEEP",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "SLEEP",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1650,6 +1796,12 @@
       },
       {
         "objectName": "thermometerValue"
+      },
+      {
+        "objectName": "bed"
+      },
+      {
+        "objectName": "sleep_button"
       }
     ]
   },
@@ -1755,6 +1907,60 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "lockActions",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::IgnoreDefaultControls"
+              },
+              "parameters": [
+                "player",
+                "TopDownMovement",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "lockActions",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::IgnoreDefaultControls"
+              },
+              "parameters": [
+                "player",
+                "TopDownMovement",
+                "no"
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
@@ -1850,16 +2056,6 @@
             },
             {
               "type": {
-                "value": "TopDownMovementBehavior::IgnoreDefaultControls"
-              },
-              "parameters": [
-                "player",
-                "TopDownMovement",
-                "yes"
-              ]
-            },
-            {
-              "type": {
                 "value": "Cache"
               },
               "parameters": [
@@ -1903,16 +2099,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::IgnoreDefaultControls"
-              },
-              "parameters": [
-                "player",
-                "TopDownMovement",
-                "no"
-              ]
-            },
             {
               "type": {
                 "value": "Delete"
@@ -1993,21 +2179,90 @@
       "parameters": []
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Thermal",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "value": "ResizableCapability::ResizableBehavior::SetHeight"
-          },
-          "parameters": [
-            "thermometerValue",
-            "Resizable",
-            "=",
-            "min(64, roomTemperature * 2)"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetHeight"
+              },
+              "parameters": [
+                "thermometerValue",
+                "Resizable",
+                "=",
+                "min(64, roomTemperature * 2)"
+              ]
+            }
           ]
         }
-      ]
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Sleep",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Space\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "sleep_button"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "lockActions",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "player",
+                "Animation",
+                "=",
+                "\"lie-in-bed\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
     }
   ],
   "layers": [

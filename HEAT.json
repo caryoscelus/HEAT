@@ -338,6 +338,22 @@
         "name": "thermometer-value",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/bed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/bed.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/player-sleep.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/player-sleep.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -616,6 +632,54 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/player-tv.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 25,
+                    "y": 253
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 118,
+                    "y": 241
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 83,
+                        "y": 234
+                      },
+                      {
+                        "x": 154,
+                        "y": 232
+                      },
+                      {
+                        "x": 157,
+                        "y": 263.5
+                      },
+                      {
+                        "x": 83,
+                        "y": 263.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "lie-in-bed",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/player-sleep.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
