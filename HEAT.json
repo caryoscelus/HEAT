@@ -348,10 +348,18 @@
         "userAdded": false
       },
       {
-        "file": "assets/player-sleep.png",
+        "file": "assets/player-sleep-0000.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets/player-sleep.png",
+        "name": "assets/player-sleep-0000.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/player-sleep-0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/player-sleep-0001.png",
         "smoothed": true,
         "userAdded": false
       }
@@ -438,12 +446,11 @@
           "viewpoint": "TopDown"
         },
         {
-          "isFolded": true,
           "name": "TopDownMovementAnimator",
           "type": "TopDownMovementAnimator::TopDownMovementAnimator",
           "Animation": "Animation",
           "TopDownMovement": "TopDownMovement",
-          "IsScalingAnimation": true,
+          "IsScalingAnimation": false,
           "IsPausingAnimation": true,
           "AnimationName": "walk",
           "DirectionCount": 0,
@@ -674,12 +681,48 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
+              "looping": true,
+              "timeBetweenFrames": 0.3,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets/player-sleep.png",
+                  "image": "assets/player-sleep-0000.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 25,
+                    "y": 253
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 118,
+                    "y": 241
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 83,
+                        "y": 234
+                      },
+                      {
+                        "x": 154,
+                        "y": 232
+                      },
+                      {
+                        "x": 157,
+                        "y": 263.5
+                      },
+                      {
+                        "x": 83,
+                        "y": 263.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/player-sleep-0001.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",

@@ -62,6 +62,11 @@
       "name": "roomTemperature",
       "type": "number",
       "value": 20
+    },
+    {
+      "name": "sleepAttempts",
+      "type": "number",
+      "value": 0
     }
   ],
   "instances": [
@@ -381,6 +386,22 @@
       "x": -41,
       "y": 546,
       "zOrder": 805,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Debug",
+      "name": "debug_text",
+      "persistentUuid": "b3f70331-16fd-49f3-b778-18726cace26d",
+      "width": 0,
+      "x": 42,
+      "y": 34,
+      "zOrder": 806,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1751,6 +1772,48 @@
         "characterSize": 20,
         "color": "255;255;255"
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "debug_text",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "DEBUG",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "DEBUG",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1802,6 +1865,9 @@
       },
       {
         "objectName": "sleep_button"
+      },
+      {
+        "objectName": "debug_text"
       }
     ]
   },
@@ -2183,6 +2249,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Thermal",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2258,11 +2325,222 @@
                 "=",
                 "\"lie-in-bed\""
               ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
+              },
+              "parameters": [
+                "player",
+                "Animation"
+              ]
+            },
+            {
+              "type": {
+                "value": "TopDownMovementAnimator::TopDownMovementAnimator::SetIsPausingAnimation"
+              },
+              "parameters": [
+                "player",
+                "TopDownMovementAnimator",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "sleepAttempts",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "player",
+                "Animation",
+                "=",
+                "\"lie-in-bed\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Sprite"
+              },
+              "parameters": [
+                "player",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "sleepAttempts",
+                    ">=",
+                    "8"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementAnimator::TopDownMovementAnimator::SetIsPausingAnimation"
+                  },
+                  "parameters": [
+                    "player",
+                    "TopDownMovementAnimator",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "time",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                  },
+                  "parameters": [
+                    "player",
+                    "Animation",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "lockActions",
+                    "False",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "sleepAttempts",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                }
+              ]
             }
           ]
         }
       ],
       "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Debug",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyFromTextReleased"
+          },
+          "parameters": [
+            "",
+            "\"BackSlash\""
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "LayerVisible"
+          },
+          "parameters": [
+            "",
+            "\"Debug\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ShowLayer"
+          },
+          "parameters": [
+            "",
+            "\"Debug\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "debug_text",
+            "Text",
+            "=",
+            "\"Time: \" + ToString(time) + \"\nSleep attempts: \" + ToString(sleepAttempts)"
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -2359,6 +2637,23 @@
       "name": "Effects",
       "renderingType": "",
       "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Debug",
+      "renderingType": "",
+      "visibility": false,
       "cameras": [],
       "effects": []
     }
