@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.546875,
+    "zoomFactor": 0.4950840073748889,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -49,8 +49,8 @@
       "name": "dream_street",
       "persistentUuid": "9a21f596-a417-4176-95cf-ddaf66d091ef",
       "width": 0,
-      "x": -286,
-      "y": -121,
+      "x": 581,
+      "y": 364,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
@@ -68,6 +68,22 @@
       "x": 322,
       "y": 460,
       "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "postbox",
+      "persistentUuid": "b15eb65f-c674-469e-b7d7-8ca18d1a3e6c",
+      "width": 0,
+      "x": 1636,
+      "y": 328,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -98,8 +114,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 960,
+                    "y": 540
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -213,6 +229,94 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "postbox",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "acceleration": 999999,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "customIsometryAngle": 30,
+          "deceleration": 999999,
+          "ignoreDefaultControls": false,
+          "maxSpeed": 10,
+          "movementAngleOffset": 0,
+          "name": "TopDownMovement",
+          "rotateObject": false,
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "viewpoint": "TopDown"
+        },
+        {
+          "name": "YSort",
+          "type": "YSort::YSort"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/postbox.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 83.5,
+                    "y": 153
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 37,
+                        "y": 98.5
+                      },
+                      {
+                        "x": 36,
+                        "y": 28
+                      },
+                      {
+                        "x": 134,
+                        "y": 28
+                      },
+                      {
+                        "x": 132,
+                        "y": 96.5
+                      },
+                      {
+                        "x": 99,
+                        "y": 150.5
+                      },
+                      {
+                        "x": 73.5,
+                        "y": 150.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -223,6 +327,9 @@
       },
       {
         "objectName": "car"
+      },
+      {
+        "objectName": "postbox"
       }
     ]
   },
@@ -238,7 +345,7 @@
           "parameters": [
             "dream_street",
             "player",
-            "800",
+            "1200",
             ""
           ]
         }
@@ -296,6 +403,32 @@
             "player",
             "SmoothCamera",
             "yes",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Distance"
+          },
+          "parameters": [
+            "player",
+            "postbox",
+            "60",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PopScene"
+          },
+          "parameters": [
             ""
           ]
         }

@@ -378,6 +378,14 @@
         "name": "assets/car.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/postbox.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/postbox.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -850,6 +858,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/behaviorremapper"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/gamepads"
     }
   ],
   "externalLayouts": []
