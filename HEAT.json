@@ -792,6 +792,11 @@
       "name": "debug",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "nextDream",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [
@@ -802,6 +807,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/game-over"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/dream-0"
     }
   ],
   "externalEvents": [],
