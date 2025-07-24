@@ -426,6 +426,16 @@
       "actions": [
         {
           "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "nextDream",
+            "=",
+            "1"
+          ]
+        },
+        {
+          "type": {
             "value": "PopScene"
           },
           "parameters": [

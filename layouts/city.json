@@ -1,13 +1,13 @@
 {
-  "b": 209,
+  "b": 137,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Game_32Over",
-  "name": "Game Over",
-  "r": 209,
+  "mangledName": "City",
+  "name": "City",
+  "r": 137,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "",
-  "v": 209,
+  "v": 137,
   "uiSettings": {
     "grid": false,
     "gridType": "rectangular",
@@ -26,17 +26,33 @@
   "instances": [
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 163,
+      "customSize": false,
+      "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "gameover",
-      "persistentUuid": "c5b8537e-f55a-42d5-934f-57e530b09f1b",
-      "width": 399,
-      "x": 525,
-      "y": 356,
+      "name": "player",
+      "persistentUuid": "f449f0d5-44dd-4591-8e95-79cacd076f8b",
+      "width": 0,
+      "x": 788,
+      "y": 443,
       "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 800,
+      "keepRatio": true,
+      "layer": "",
+      "name": "home",
+      "persistentUuid": "54225fd1-9546-4482-91e0-a47b1809f2e9",
+      "width": 1265,
+      "x": 659,
+      "y": 501,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -44,79 +60,93 @@
   ],
   "objects": [
     {
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "gameover",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
+      "name": "home",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
-      "string": "GAME OVER",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 40,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "GAME OVER",
-        "font": "",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 40,
-        "color": "0;0;0"
-      }
+      "behaviors": [
+        {
+          "name": "YSort",
+          "type": "YSort::YSort"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/house.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 594,
+                    "y": 372
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 189,
+                        "y": 240
+                      },
+                      {
+                        "x": 665,
+                        "y": 307
+                      },
+                      {
+                        "x": 524,
+                        "y": 407
+                      },
+                      {
+                        "x": 60,
+                        "y": 322
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "gameover"
+        "objectName": "home"
       }
     ]
   },
   "events": [
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyFromTextReleased"
-          },
-          "parameters": [
-            "",
-            "\"Space\""
-          ]
-        }
-      ],
+      "conditions": [],
       "actions": [
         {
           "type": {
-            "value": "Scene"
+            "value": "SmoothCamera::SmoothCamera::SetFollowOnY"
           },
           "parameters": [
-            "",
-            "\"Home\"",
-            "no"
+            "player",
+            "SmoothCamera",
+            "yes",
+            ""
           ]
         }
       ]
@@ -196,10 +226,6 @@
     {
       "name": "SmoothCamera",
       "type": "SmoothCamera::SmoothCamera"
-    },
-    {
-      "name": "Text",
-      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "TopDownMovement",

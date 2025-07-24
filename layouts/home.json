@@ -1,8 +1,8 @@
 {
   "b": 0,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Game_32Scene",
-  "name": "Game Scene",
+  "mangledName": "Home",
+  "name": "Home",
   "r": 0,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -2002,6 +2002,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Player",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2218,7 +2219,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Door",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2251,7 +2251,7 @@
               },
               "parameters": [
                 "",
-                "\"Game Over\"",
+                "\"City\"",
                 ""
               ]
             }
@@ -2418,7 +2418,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Sleep",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
