@@ -2002,7 +2002,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Player",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2553,12 +2552,21 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Scene"
+                    "value": "PushScene"
                   },
                   "parameters": [
                     "",
-                    "\"Dream \" + ToString(nextDream)",
-                    ""
+                    "\"Dream \" + ToString(nextDream)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "sleepAttempts",
+                    "=",
+                    "99"
                   ]
                 }
               ]

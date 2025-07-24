@@ -362,6 +362,22 @@
         "name": "assets/player-sleep-0001.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/dream-0-street.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/dream-0-street.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/car.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/car.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
