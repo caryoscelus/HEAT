@@ -2019,6 +2019,17 @@
                 "impassable",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "SmoothCamera::SmoothCamera::SetFollowOnY"
+              },
+              "parameters": [
+                "player",
+                "SmoothCamera",
+                "yes",
+                ""
+              ]
             }
           ]
         }
@@ -2407,6 +2418,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Sleep",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",

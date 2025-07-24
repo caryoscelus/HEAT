@@ -65,8 +65,8 @@
       "name": "car",
       "persistentUuid": "e829286b-0eb8-4ff1-8d18-da31a8bced06",
       "width": 0,
-      "x": 28,
-      "y": 244,
+      "x": 322,
+      "y": 460,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -144,6 +144,21 @@
       "effects": [],
       "behaviors": [
         {
+          "acceleration": 999999,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "customIsometryAngle": 30,
+          "deceleration": 999999,
+          "ignoreDefaultControls": false,
+          "maxSpeed": 50,
+          "movementAngleOffset": 0,
+          "name": "TopDownMovement",
+          "rotateObject": false,
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "viewpoint": "TopDown"
+        },
+        {
           "name": "YSort",
           "type": "YSort::YSort"
         }
@@ -163,8 +178,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 206,
+                    "y": 193.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -214,8 +229,34 @@
   "events": [
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "Distance"
+          },
+          "parameters": [
+            "dream_street",
+            "player",
+            "800",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "player",
+            "=",
+            "dream_street.CenterX()",
+            "=",
+            "dream_street.CenterY()"
+          ]
+        }
+      ]
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -238,6 +279,23 @@
           "parameters": [
             "player",
             "car",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SmoothCamera::SmoothCamera::SetFollowOnY"
+          },
+          "parameters": [
+            "player",
+            "SmoothCamera",
+            "yes",
             ""
           ]
         }
