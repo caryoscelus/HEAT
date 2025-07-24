@@ -787,6 +787,11 @@
       "name": "timeOfDay",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "debug",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [
