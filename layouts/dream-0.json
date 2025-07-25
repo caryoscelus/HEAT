@@ -160,6 +160,8 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 999999,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -169,9 +171,7 @@
           "ignoreDefaultControls": false,
           "maxSpeed": 50,
           "movementAngleOffset": 0,
-          "name": "TopDownMovement",
           "rotateObject": false,
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "viewpoint": "TopDown"
         },
         {
@@ -240,6 +240,8 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 999999,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -249,9 +251,7 @@
           "ignoreDefaultControls": false,
           "maxSpeed": 10,
           "movementAngleOffset": 0,
-          "name": "TopDownMovement",
           "rotateObject": false,
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "viewpoint": "TopDown"
         },
         {
