@@ -14,14 +14,14 @@
   "tags": [],
   "authorIds": [],
   "dependencies": [],
-  "globalVariables": [
+  "globalVariables": [],
+  "sceneVariables": [
     {
       "name": "hasActive",
       "type": "boolean",
       "value": false
     }
   ],
-  "sceneVariables": [],
   "eventsFunctions": [
     {
       "fullName": "",
