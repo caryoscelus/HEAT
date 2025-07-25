@@ -14,9 +14,42 @@
   "tags": [],
   "authorIds": [],
   "dependencies": [],
-  "globalVariables": [],
+  "globalVariables": [
+    {
+      "name": "hasActive",
+      "type": "boolean",
+      "value": false
+    }
+  ],
   "sceneVariables": [],
-  "eventsFunctions": [],
+  "eventsFunctions": [
+    {
+      "fullName": "",
+      "functionType": "Action",
+      "name": "onScenePreEvents",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "hasActive",
+                "False",
+                "9999"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    }
+  ],
   "eventsBasedBehaviors": [
     {
       "description": "",
@@ -40,6 +73,70 @@
                   },
                   "parameters": [
                     "False"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "hasActive",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Object"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "OR clears selected object for some reason, so we have to use two events instead"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Target",
+                    "160",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Object"
                   ]
                 }
               ]
@@ -74,6 +171,16 @@
                         "120",
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "hasActive",
+                        "False",
+                        ""
+                      ]
                     }
                   ],
                   "actions": [
@@ -93,56 +200,48 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": true,
-                        "value": "Distance"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Target",
-                        "160",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "Object"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
                         "value": "Visible"
                       },
                       "parameters": [
                         "Object"
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "KeyFromTextReleased"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Space\""
-                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "SetReturnBoolean"
+                        "value": "SetBooleanVariable"
                       },
                       "parameters": [
-                        "True"
+                        "hasActive",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "KeyFromTextReleased"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Space\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetReturnBoolean"
+                          },
+                          "parameters": [
+                            "True"
+                          ]
+                        }
                       ]
                     }
                   ]
