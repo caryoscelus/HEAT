@@ -1,0 +1,98 @@
+{
+  "author": "",
+  "category": "Game mechanic",
+  "extensionNamespace": "",
+  "fullName": "",
+  "gdevelopVersion": "",
+  "helpPath": "",
+  "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iSWNvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8cGF0aCBkPSJNNy4yLDE2bDEuMS0wLjJjMS42LTAuMywzLjMtMC41LDUtMC43Yy0yLjQsMi4zLTMuOSw1LjMtNC43LDcuOWgxNC43YzAuNC0xLjUsMS4xLTMsMi4zLTQuMWwwLjItMC4yDQoJCWMwLjItMC4yLDAuMy0wLjQsMC4zLTAuNkMyNi42LDEzLDI0LjIsOCwxOS44LDUuM2MtMC44LTEuNC0yLTIuNC0zLjYtMi45bC0wLjktMC4zQzE1LDIsMTQuNywyLDE0LjQsMi4yQzE0LjIsMi40LDE0LDIuNywxNCwzdjIuNA0KCQlsLTEuNCwwLjdDMTIuMiw2LjMsMTIsNi42LDEyLDd2MC41bC00LjcsMy4xQzYuNSwxMS4xLDYsMTIuMSw2LDEzLjFWMTVjMCwwLjMsMC4xLDAuNiwwLjQsMC44QzYuNiwxNiw2LjksMTYsNy4yLDE2eiIvPg0KCTxwYXRoIGQ9Ik02LjgsMjVDNi4zLDI1LjUsNiwyNi4yLDYsMjd2MmMwLDAuNiwwLjQsMSwxLDFoMThjMC42LDAsMS0wLjQsMS0xdi0yYzAtMC44LTAuMy0xLjUtMC44LTJINi44eiIvPg0KPC9nPg0KPC9zdmc+DQo=",
+  "name": "ProximityReactive",
+  "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/Glyphster Pack/Master/SVG/SEO/7b70723b72d1be8195a115775561062cc7127c647b1be0682e6aba96001d2841_SEO_business_strategy_chess_horse_knight.svg",
+  "shortDescription": "Adds behaviour for objects that react on being nearby",
+  "version": "",
+  "description": "",
+  "tags": [],
+  "authorIds": [],
+  "dependencies": [],
+  "globalVariables": [],
+  "sceneVariables": [],
+  "eventsFunctions": [],
+  "eventsBasedBehaviors": [
+    {
+      "description": "",
+      "fullName": "",
+      "name": "ProximityReactive",
+      "objectType": "",
+      "eventsFunctions": [
+        {
+          "fullName": "",
+          "functionType": "Condition",
+          "name": "IsActivated",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Space\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ProximityReactive::ProximityReactive",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "propertyDescriptors": [
+        {
+          "value": "",
+          "type": "String",
+          "label": "Label",
+          "description": "Label to display action when available",
+          "group": "",
+          "extraInformation": [],
+          "name": "Label"
+        },
+        {
+          "value": "",
+          "type": "Number",
+          "label": "",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "name": "Target"
+        }
+      ],
+      "sharedPropertyDescriptors": []
+    }
+  ],
+  "eventsBasedObjects": []
+}

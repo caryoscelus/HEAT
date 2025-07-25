@@ -69,6 +69,11 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "ProximityReactive",
+          "type": "ProximityReactive::ProximityReactive",
+          "label": "Home"
+        },
+        {
           "name": "YSort",
           "type": "YSort::YSort"
         }
@@ -239,6 +244,10 @@
     {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "ProximityReactive",
+      "type": "ProximityReactive::ProximityReactive"
     },
     {
       "name": "Resizable",
