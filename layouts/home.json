@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5117784035210248,
+    "zoomFactor": 0.6672773998330075,
     "windowMask": false
   },
   "objectsGroups": [
@@ -751,7 +751,12 @@
       "underlined": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "ProximityReactive",
+          "type": "ProximityReactive::ProximityReactive"
+        }
+      ],
       "string": "ESCAPE",
       "font": "",
       "textAlignment": "left",
@@ -858,7 +863,12 @@
       "underlined": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "ProximityReactive",
+          "type": "ProximityReactive::ProximityReactive"
+        }
+      ],
       "string": "WATCH TV",
       "font": "",
       "textAlignment": "left",
@@ -1746,7 +1756,12 @@
       "underlined": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "ProximityReactive",
+          "type": "ProximityReactive::ProximityReactive"
+        }
+      ],
       "string": "SLEEP",
       "font": "",
       "textAlignment": "left",
@@ -2002,7 +2017,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Player",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2042,75 +2056,10 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Action",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "Distance"
-              },
-              "parameters": [
-                "player",
-                "Action",
-                "180",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "Action"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Distance"
-              },
-              "parameters": [
-                "player",
-                "Action",
-                "160",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "lockActions",
-                "False",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "Action",
-                ""
-              ]
-            }
-          ]
-        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -2228,23 +2177,27 @@
           "conditions": [
             {
               "type": {
-                "value": "Visible"
+                "value": "ProximityReactive::ProximityReactive::IsActivated"
               },
               "parameters": [
-                "escape_button"
-              ]
-            },
-            {
-              "type": {
-                "value": "KeyFromTextReleased"
-              },
-              "parameters": [
-                "",
-                "\"Space\""
+                "escape_button",
+                "ProximityReactive",
+                "player",
+                ""
               ]
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "cityLocation",
+                "=",
+                "\"home\""
+              ]
+            },
             {
               "type": {
                 "value": "Scene"
@@ -2252,7 +2205,7 @@
               "parameters": [
                 "",
                 "\"City\"",
-                ""
+                "no"
               ]
             }
           ]
@@ -2265,7 +2218,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "TV",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2275,19 +2227,13 @@
           "conditions": [
             {
               "type": {
-                "value": "KeyFromTextReleased"
+                "value": "ProximityReactive::ProximityReactive::IsActivated"
               },
               "parameters": [
-                "",
-                "\"Space\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Visible"
-              },
-              "parameters": [
-                "watchtv_button"
+                "watchtv_button",
+                "ProximityReactive",
+                "player",
+                ""
               ]
             }
           ],
@@ -2427,19 +2373,13 @@
           "conditions": [
             {
               "type": {
-                "value": "KeyFromTextReleased"
+                "value": "ProximityReactive::ProximityReactive::IsActivated"
               },
               "parameters": [
-                "",
-                "\"Space\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Visible"
-              },
-              "parameters": [
-                "sleep_button"
+                "sleep_button",
+                "ProximityReactive",
+                "player",
+                ""
               ]
             }
           ],
@@ -2645,6 +2585,11 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     }
   ],
   "layers": [
@@ -2778,6 +2723,10 @@
     {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "ProximityReactive",
+      "type": "ProximityReactive::ProximityReactive"
     },
     {
       "name": "Resizable",

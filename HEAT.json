@@ -844,6 +844,11 @@
       "name": "nextDream",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "cityLocation",
+      "type": "string",
+      "value": ""
     }
   ],
   "layouts": [

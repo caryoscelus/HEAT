@@ -33,8 +33,8 @@
       "name": "player",
       "persistentUuid": "f449f0d5-44dd-4591-8e95-79cacd076f8b",
       "width": 0,
-      "x": 788,
-      "y": 443,
+      "x": 1038,
+      "y": 451,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -338,7 +338,7 @@
           "parameters": [
             "",
             "\"Home\"",
-            ""
+            "no"
           ]
         }
       ]
@@ -367,6 +367,51 @@
             "",
             "\"HospitalRoom\"",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "cityLocation",
+                "=",
+                "\"home\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "player",
+                "=",
+                "home_button.X()",
+                "=",
+                "home_button.Y()"
+              ]
+            }
           ]
         }
       ]
