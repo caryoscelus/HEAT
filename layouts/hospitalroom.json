@@ -1,13 +1,13 @@
 {
-  "b": 209,
+  "b": 221,
   "disableInputWhenNotFocused": true,
   "mangledName": "HospitalRoom",
   "name": "HospitalRoom",
-  "r": 209,
+  "r": 221,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "",
-  "v": 209,
+  "v": 221,
   "uiSettings": {
     "grid": false,
     "gridType": "rectangular",
@@ -33,8 +33,8 @@
       "name": "exit",
       "persistentUuid": "08285091-465f-4776-873a-bcbfaab2b90e",
       "width": 0,
-      "x": 388,
-      "y": 234,
+      "x": 375,
+      "y": 389,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -42,16 +42,34 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 285,
       "keepRatio": true,
       "layer": "",
       "name": "player",
       "persistentUuid": "d8b9b078-26af-4508-9b32-fb3668ae0ab6",
-      "width": 0,
-      "x": 689,
-      "y": 371,
+      "width": 235,
+      "x": 545,
+      "y": 476,
       "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 342,
+      "keepRatio": true,
+      "layer": "",
+      "name": "bed",
+      "persistentUuid": "4945a16e-fe7c-4b38-9064-e3da4866c43a",
+      "width": 400,
+      "x": 504,
+      "y": 482,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -105,6 +123,71 @@
         "characterSize": 40,
         "color": "255;255;255"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "bed",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "YSort",
+          "type": "YSort::YSort"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/hospital-bed.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 329,
+                    "y": 540.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 206,
+                        "y": 83.5
+                      },
+                      {
+                        "x": 441,
+                        "y": 79.5
+                      },
+                      {
+                        "x": 644,
+                        "y": 549
+                      },
+                      {
+                        "x": 19,
+                        "y": 549
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -112,6 +195,9 @@
     "children": [
       {
         "objectName": "exit"
+      },
+      {
+        "objectName": "bed"
       }
     ]
   },
@@ -140,6 +226,71 @@
             "",
             "\"City\"",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionPoint"
+          },
+          "parameters": [
+            "bed",
+            "player.X()",
+            "player.Y()"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "bed",
+            "YSort",
+            "no"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "bed",
+            "=",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "CollisionPoint"
+          },
+          "parameters": [
+            "bed",
+            "player.X()",
+            "player.Y()"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "bed",
+            "YSort",
+            "yes"
           ]
         }
       ]
@@ -172,23 +323,7 @@
           "width": 0
         }
       ],
-      "effects": [
-        {
-          "effectType": "Scene3D::HemisphereLight",
-          "name": "3D Light",
-          "doubleParameters": {
-            "elevation": 45,
-            "intensity": 1,
-            "rotation": 0
-          },
-          "stringParameters": {
-            "groundColor": "64;64;64",
-            "skyColor": "255;255;255",
-            "top": "Y-"
-          },
-          "booleanParameters": {}
-        }
-      ]
+      "effects": []
     }
   ],
   "behaviorsSharedData": [

@@ -409,6 +409,14 @@
         "name": "assets/menu.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/hospital-bed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/hospital-bed.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
