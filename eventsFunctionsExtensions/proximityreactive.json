@@ -270,17 +270,7 @@
           "objectGroups": []
         }
       ],
-      "propertyDescriptors": [
-        {
-          "value": "",
-          "type": "String",
-          "label": "Label",
-          "description": "Label to display action when available",
-          "group": "",
-          "extraInformation": [],
-          "name": "Label"
-        }
-      ],
+      "propertyDescriptors": [],
       "sharedPropertyDescriptors": []
     }
   ],
