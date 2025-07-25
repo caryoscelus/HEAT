@@ -541,14 +541,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 25,
-                    "y": 253
+                    "x": 115,
+                    "y": 252.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 118,
-                    "y": 241
+                    "x": 116,
+                    "y": 201
                   },
                   "customCollisionMask": [
                     [
@@ -577,14 +577,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 25,
-                    "y": 253
+                    "x": 115,
+                    "y": 252.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 118,
-                    "y": 241
+                    "x": 116,
+                    "y": 201
                   },
                   "customCollisionMask": [
                     [
@@ -613,14 +613,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 25,
-                    "y": 253
+                    "x": 115,
+                    "y": 252.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 118,
-                    "y": 241
+                    "x": 116,
+                    "y": 201
                   },
                   "customCollisionMask": [
                     [
@@ -649,14 +649,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 25,
-                    "y": 253
+                    "x": 115,
+                    "y": 252.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 118,
-                    "y": 241
+                    "x": 116,
+                    "y": 201
                   },
                   "customCollisionMask": [
                     [
@@ -697,14 +697,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 25,
-                    "y": 253
+                    "x": 115,
+                    "y": 252.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 118,
-                    "y": 241
+                    "x": 116,
+                    "y": 201
                   },
                   "customCollisionMask": [
                     [
@@ -745,14 +745,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 25,
-                    "y": 253
+                    "x": 115,
+                    "y": 252.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 118,
-                    "y": 241
+                    "x": 116,
+                    "y": 201
                   },
                   "customCollisionMask": [
                     [
@@ -781,14 +781,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 25,
-                    "y": 253
+                    "x": 115,
+                    "y": 252.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 118,
-                    "y": 241
+                    "x": 116,
+                    "y": 201
                   },
                   "customCollisionMask": [
                     [
