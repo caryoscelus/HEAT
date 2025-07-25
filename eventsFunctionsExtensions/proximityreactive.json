@@ -32,24 +32,119 @@
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "KeyFromTextReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Space\""
-                  ]
-                }
-              ],
+              "conditions": [],
               "actions": [
                 {
                   "type": {
                     "value": "SetReturnBoolean"
                   },
                   "parameters": [
-                    "True"
+                    "False"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PickNearest"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Target.CenterX()",
+                    "Target.CenterY()",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Distance"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Target",
+                        "120",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "Object",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Distance"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Target",
+                        "160",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "Object"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Visible"
+                      },
+                      "parameters": [
+                        "Object"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "KeyFromTextReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Space\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -66,6 +161,11 @@
               "name": "Behavior",
               "supplementaryInformation": "ProximityReactive::ProximityReactive",
               "type": "behavior"
+            },
+            {
+              "description": "Player object",
+              "name": "Target",
+              "type": "objectList"
             }
           ],
           "objectGroups": []
@@ -80,15 +180,6 @@
           "group": "",
           "extraInformation": [],
           "name": "Label"
-        },
-        {
-          "value": "",
-          "type": "Number",
-          "label": "",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
-          "name": "Target"
         }
       ],
       "sharedPropertyDescriptors": []
