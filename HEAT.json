@@ -401,6 +401,14 @@
         "metadata": "",
         "name": "assets/intro/intro.mp4",
         "userAdded": false
+      },
+      {
+        "file": "assets/menu.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/menu.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -862,6 +870,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/hospitalroom"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/menu"
     }
   ],
   "externalEvents": [],
@@ -893,6 +905,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/proximityreactive"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/buttonstates"
     }
   ],
   "externalLayouts": []
