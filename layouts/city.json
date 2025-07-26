@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.7130377630690398,
+    "zoomFactor": 0.6455105703311491,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -85,6 +85,40 @@
       "x": 814,
       "y": 515,
       "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2,
+      "flippedX": true,
+      "height": 784,
+      "keepRatio": true,
+      "layer": "",
+      "name": "convinienceStore",
+      "persistentUuid": "d94aca83-7423-408d-8fde-1a0eb88c4b69",
+      "width": 1240,
+      "x": 2273,
+      "y": 397,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "convinienceStoreButton",
+      "persistentUuid": "a7245fec-b2b3-4eeb-a6b0-ac04171d22b0",
+      "width": 0,
+      "x": 1376,
+      "y": 383,
+      "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -256,6 +290,123 @@
         "characterSize": 20,
         "color": "255;255;255"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "convinienceStore",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ProximityReactive",
+          "type": "ProximityReactive::ProximityReactive",
+          "label": "Home"
+        },
+        {
+          "name": "YSort",
+          "type": "YSort::YSort"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/house.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 594,
+                    "y": 372
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 189,
+                        "y": 240
+                      },
+                      {
+                        "x": 665,
+                        "y": 307
+                      },
+                      {
+                        "x": 524,
+                        "y": 407
+                      },
+                      {
+                        "x": 60,
+                        "y": 322
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "convinienceStoreButton",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ProximityReactive",
+          "type": "ProximityReactive::ProximityReactive"
+        }
+      ],
+      "string": "CONVINIENCE STORE",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "CONVINIENCE STORE",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -265,10 +416,16 @@
         "objectName": "home"
       },
       {
+        "objectName": "convinienceStore"
+      },
+      {
         "objectName": "home_button"
       },
       {
         "objectName": "other_house_button"
+      },
+      {
+        "objectName": "convinienceStoreButton"
       }
     ]
   },

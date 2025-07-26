@@ -1,0 +1,36 @@
+{
+  "associatedLayout": "Base Scene",
+  "name": "HUD",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 48,
+      "keepRatio": true,
+      "layer": "",
+      "name": "money",
+      "persistentUuid": "7a4018fb-f2ec-4e37-bc31-56702d19e6ae",
+      "width": 96,
+      "x": 1134,
+      "y": 22,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.6040838749988867,
+    "windowMask": false
+  }
+}

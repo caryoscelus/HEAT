@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.546875,
+    "zoomFactor": 0.7130377630690421,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -51,7 +51,7 @@
       "persistentUuid": "d8b9b078-26af-4508-9b32-fb3668ae0ab6",
       "width": 235,
       "x": 631,
-      "y": 526,
+      "y": 446,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -69,7 +69,58 @@
       "width": 400,
       "x": 632,
       "y": 507,
-      "zOrder": 3,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 70,
+      "keepRatio": true,
+      "layer": "",
+      "name": "vase",
+      "persistentUuid": "e5ad5cb3-d96e-4a4a-a197-4a47e99d4baf",
+      "width": 48,
+      "x": 419,
+      "y": 181,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 87,
+      "keepRatio": true,
+      "layer": "",
+      "name": "flower",
+      "persistentUuid": "b2c4bc94-e1ad-4991-a17c-4e138fba7374",
+      "width": 43,
+      "x": 429,
+      "y": 145,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 345,
+      "customSize": true,
+      "depth": 1,
+      "height": 87,
+      "keepRatio": true,
+      "layer": "",
+      "name": "flower",
+      "persistentUuid": "268c7c0a-785e-4b0e-9ad8-6bcc0cd8a951",
+      "width": 43,
+      "x": 418,
+      "y": 152,
+      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -188,6 +239,130 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "vase",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/hospital-vase.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 453,
+                        "y": 412
+                      },
+                      {
+                        "x": 567,
+                        "y": 412
+                      },
+                      {
+                        "x": 567,
+                        "y": 583
+                      },
+                      {
+                        "x": 453,
+                        "y": 583
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "flower",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/hospital-flower.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 34.5,
+                        "y": 34
+                      },
+                      {
+                        "x": 79.5,
+                        "y": 29.5
+                      },
+                      {
+                        "x": 104.5,
+                        "y": 49.5
+                      },
+                      {
+                        "x": 54,
+                        "y": 235
+                      },
+                      {
+                        "x": 33,
+                        "y": 236
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -198,10 +373,23 @@
       },
       {
         "objectName": "bed"
+      },
+      {
+        "objectName": "vase"
+      },
+      {
+        "objectName": "flower"
       }
     ]
   },
   "events": [
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Global"
+    },
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
@@ -291,6 +479,117 @@
             "bed",
             "YSort",
             "yes"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "player",
+            "Animation",
+            "=",
+            "\"watch-tv\""
+          ]
+        }
+      ]
+    },
+    {
+      "disabled": true,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+          },
+          "parameters": [
+            "",
+            "\"HUD\"",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "DebuggerTools::ConsoleLog"
+          },
+          "parameters": [
+            "\"Loaded extern\"",
+            "\"info\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "player",
+            "SmoothCamera",
+            "no"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::CompareNumbers"
+          },
+          "parameters": [
+            "Money::getMoney()",
+            "=",
+            "0"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Money::receiveFunds"
+          },
+          "parameters": [
+            "",
+            "300",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "DebuggerTools::ConsoleLog"
+          },
+          "parameters": [
+            "\"RECEIVED\"",
+            "\"info\"",
+            ""
           ]
         }
       ]

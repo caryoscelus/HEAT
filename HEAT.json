@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 237,
+    "build": 229,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -417,6 +417,22 @@
         "name": "assets/hospital-bed.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/hospital-vase.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/hospital-vase.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hospital-flower.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/hospital-flower.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -816,6 +832,48 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "money",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "$$$",
+      "font": "",
+      "textAlignment": "right",
+      "characterSize": 40,
+      "color": {
+        "b": 214,
+        "g": 214,
+        "r": 214
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "27;27;27",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "$$$",
+        "font": "",
+        "textAlignment": "right",
+        "verticalTextAlignment": "top",
+        "characterSize": 40,
+        "color": "214;214;214"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -823,6 +881,9 @@
     "children": [
       {
         "objectName": "player"
+      },
+      {
+        "objectName": "money"
       }
     ]
   },
@@ -857,6 +918,11 @@
       "name": "cityLocation",
       "type": "string",
       "value": ""
+    },
+    {
+      "name": "temperature",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [
@@ -887,9 +953,18 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/menu"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/base-scene"
     }
   ],
-  "externalEvents": [],
+  "externalEvents": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/global"
+    }
+  ],
   "eventsFunctionsExtensions": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -922,7 +997,20 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/buttonstates"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/heatgame"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/money"
     }
   ],
-  "externalLayouts": []
+  "externalLayouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/hud"
+    }
+  ]
 }

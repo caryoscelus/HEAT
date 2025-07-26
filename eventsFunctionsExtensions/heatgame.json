@@ -1,0 +1,91 @@
+{
+  "author": "",
+  "category": "",
+  "extensionNamespace": "",
+  "fullName": "",
+  "gdevelopVersion": "",
+  "helpPath": "",
+  "iconUrl": "",
+  "name": "HeatGame",
+  "previewIconUrl": "",
+  "shortDescription": "",
+  "version": "",
+  "description": "",
+  "tags": [],
+  "authorIds": [],
+  "dependencies": [],
+  "globalVariables": [
+    {
+      "name": "time",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "temperature",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "heartHealth",
+      "type": "number",
+      "value": 1
+    },
+    {
+      "name": "money",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "timeOfDay",
+      "type": "number",
+      "value": 0
+    }
+  ],
+  "sceneVariables": [
+    {
+      "name": "Variable",
+      "type": "number",
+      "value": 0
+    }
+  ],
+  "eventsFunctions": [
+    {
+      "fullName": "",
+      "functionType": "Action",
+      "name": "advanceTime",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "time",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "timeOfDay",
+                "=",
+                "mod(time, 4)"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    }
+  ],
+  "eventsBasedBehaviors": [],
+  "eventsBasedObjects": []
+}
