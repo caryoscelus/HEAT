@@ -1893,6 +1893,13 @@
   },
   "events": [
     {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Global"
+    },
+    {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
@@ -2017,6 +2024,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Player",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2056,72 +2064,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Action",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "lockActions",
-                "True",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::IgnoreDefaultControls"
-              },
-              "parameters": [
-                "player",
-                "TopDownMovement",
-                "yes"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "lockActions",
-                "False",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::IgnoreDefaultControls"
-              },
-              "parameters": [
-                "player",
-                "TopDownMovement",
-                "no"
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
+      "folded": true,
       "name": "Time",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2167,6 +2110,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Door",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
