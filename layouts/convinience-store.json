@@ -22,7 +22,13 @@
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "checkSum",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -50,8 +56,8 @@
       "name": "player",
       "persistentUuid": "f87d5ea1-ab3c-4afd-bdcc-abec0ad1f930",
       "width": 0,
-      "x": 432,
-      "y": 775,
+      "x": 684,
+      "y": 778,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -313,6 +319,12 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "OneWayGate",
+          "type": "OneWayGate::OneWayGate",
+          "AllowUp": false,
+          "AllowDown": true
+        },
+        {
           "name": "YSort",
           "type": "YSort::YSort"
         }
@@ -389,7 +401,16 @@
   "events": [
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
       "actions": [
         {
           "type": {
@@ -439,6 +460,75 @@
             "gate_enter",
             "OneWayGate",
             "player",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "OneWayGate::OneWayGate::processGate"
+          },
+          "parameters": [
+            "gate_exit",
+            "OneWayGate",
+            "player",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "checkSum",
+            "=",
+            "0"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "OneWayGate::OneWayGate::setGate"
+          },
+          "parameters": [
+            "gate_exit",
+            "OneWayGate",
+            "False",
+            "True",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "checkSum",
+            ">",
+            "0"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "OneWayGate::OneWayGate::setGate"
+          },
+          "parameters": [
+            "gate_exit",
+            "OneWayGate",
+            "False",
+            "False",
             ""
           ]
         }

@@ -29,7 +29,7 @@
           "fullName": "Process gate",
           "functionType": "Action",
           "name": "processGate",
-          "sentence": "Separates _PARAM2_ from the gate if needed or lets it proceed",
+          "sentence": "Separates _PARAM2_ from the gate _PARAM0_ if needed or lets it proceed",
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -122,6 +122,150 @@
               "description": "",
               "name": "Target",
               "type": "objectList"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "",
+          "functionType": "Action",
+          "name": "setGate",
+          "sentence": "Sets gate allows up to _PARAM2_ and allows down to _PARAM3_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "allowDown",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "AllowDown",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "allowDown",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "AllowDown",
+                    "False",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "allowUp",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "AllowUp",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "allowUp",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "AllowUp",
+                    "False",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "OneWayGate::OneWayGate",
+              "type": "behavior"
+            },
+            {
+              "defaultValue": "True",
+              "description": "",
+              "name": "allowUp",
+              "optional": true,
+              "type": "trueorfalse"
+            },
+            {
+              "defaultValue": "True",
+              "description": "",
+              "name": "allowDown",
+              "optional": true,
+              "type": "trueorfalse"
             }
           ],
           "objectGroups": []
