@@ -179,6 +179,16 @@
                 "invisibleWall",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "player",
+                "WIP",
+                ""
+              ]
             }
           ]
         }

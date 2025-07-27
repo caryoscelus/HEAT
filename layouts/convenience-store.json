@@ -296,6 +296,23 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 200,
+      "keepRatio": true,
+      "layer": "",
+      "name": "WIP",
+      "persistentUuid": "33dcac81-eadf-4153-9b9d-acc912a59df1",
+      "width": 269,
+      "x": 851,
+      "y": 579,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [

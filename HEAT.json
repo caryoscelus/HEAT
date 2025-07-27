@@ -465,6 +465,14 @@
         "name": "assets/store-gate-exit.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/wip.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/wip.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -974,6 +982,71 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "WIP",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "YSort",
+          "type": "YSort::YSort"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/wip.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 281,
+                    "y": 378
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 53,
+                        "y": 309
+                      },
+                      {
+                        "x": 486,
+                        "y": 303
+                      },
+                      {
+                        "x": 492,
+                        "y": 382
+                      },
+                      {
+                        "x": 50,
+                        "y": 382
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -987,6 +1060,9 @@
       },
       {
         "objectName": "invisibleWall"
+      },
+      {
+        "objectName": "WIP"
       }
     ]
   },

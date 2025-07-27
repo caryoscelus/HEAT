@@ -122,6 +122,40 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 283,
+      "keepRatio": true,
+      "layer": "",
+      "name": "WIP",
+      "persistentUuid": "ab70706e-3d1a-4790-b072-563381de3af2",
+      "width": 380,
+      "x": 883,
+      "y": 843,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 283,
+      "keepRatio": true,
+      "layer": "",
+      "name": "WIP",
+      "persistentUuid": "609d2e1e-ac8f-45ce-b4b5-5bf85945e15b",
+      "width": 380,
+      "x": 1029,
+      "y": 138,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
