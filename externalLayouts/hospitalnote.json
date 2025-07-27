@@ -1,0 +1,53 @@
+{
+  "associatedLayout": "Hospital Room",
+  "name": "HospitalNote",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 672,
+      "keepRatio": true,
+      "layer": "Text",
+      "name": "paper",
+      "persistentUuid": "cc63c60b-7756-41e4-be1e-aebc89e7ac43",
+      "width": 779,
+      "x": 248,
+      "y": 19,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 367,
+      "keepRatio": true,
+      "layer": "Text",
+      "name": "NewBBText",
+      "persistentUuid": "ddb95460-3440-48ee-a39c-a1e645860113",
+      "width": 689,
+      "x": 288,
+      "y": 189,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.546875,
+    "windowMask": false
+  }
+}

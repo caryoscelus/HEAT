@@ -101,6 +101,16 @@
                 "TopDownMovement",
                 "yes"
               ]
+            },
+            {
+              "type": {
+                "value": "ProximityReactive::setEnabled"
+              },
+              "parameters": [
+                "",
+                "False",
+                ""
+              ]
             }
           ]
         },
@@ -127,6 +137,16 @@
                 "player",
                 "TopDownMovement",
                 "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "ProximityReactive::setEnabled"
+              },
+              "parameters": [
+                "",
+                "True",
+                ""
               ]
             }
           ]
