@@ -1904,7 +1904,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Debug",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2024,6 +2023,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Player",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2101,27 +2101,10 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
-      "name": "Time",
+      "name": "Landscape",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "timeOfDay",
-                "=",
-                "mod(time, 4)"
-              ]
-            }
-          ]
-        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
@@ -2134,7 +2117,7 @@
                 "landscape",
                 "Animation",
                 "=",
-                "timeOfDay"
+                "HeatGame::getTimeOfDay()"
               ]
             }
           ]
@@ -2147,7 +2130,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Door",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2198,6 +2180,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "TV",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2314,6 +2297,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Thermal",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2359,6 +2343,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Sleep",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2580,11 +2565,6 @@
         }
       ],
       "parameters": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
     }
   ],
   "layers": [

@@ -113,7 +113,7 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "convinienceStoreButton",
+      "name": "convenienceStore_button",
       "persistentUuid": "a7245fec-b2b3-4eeb-a6b0-ac04171d22b0",
       "width": 0,
       "x": 1376,
@@ -365,7 +365,7 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "convinienceStoreButton",
+      "name": "convenienceStore_button",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
@@ -377,7 +377,7 @@
           "type": "ProximityReactive::ProximityReactive"
         }
       ],
-      "string": "CONVINIENCE STORE",
+      "string": "CONVENIENCE STORE",
       "font": "",
       "textAlignment": "left",
       "characterSize": 20,
@@ -400,7 +400,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "CONVINIENCE STORE",
+        "text": "CONVENIENCE STORE",
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
@@ -425,7 +425,7 @@
         "objectName": "other_house_button"
       },
       {
-        "objectName": "convinienceStoreButton"
+        "objectName": "convenienceStore_button"
       }
     ]
   },
@@ -566,7 +566,7 @@
             "value": "ProximityReactive::ProximityReactive::IsActivated"
           },
           "parameters": [
-            "convinienceStoreButton",
+            "convenienceStore_button",
             "ProximityReactive",
             "player",
             ""
@@ -580,7 +580,7 @@
           },
           "parameters": [
             "",
-            "\"Convinience Store\"",
+            "\"Convenience Store\"",
             ""
           ]
         }
@@ -625,6 +625,35 @@
                 "home_button.X()",
                 "=",
                 "home_button.Y()"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "cityLocation",
+                "=",
+                "\"convenienceStore\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "player",
+                "=",
+                "convenienceStore_button.X()",
+                "=",
+                "convenienceStore_button.Y()"
               ]
             }
           ]
@@ -715,6 +744,10 @@
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "DistanceZoom",
+      "type": "DistanceZoom::DistanceZoom"
     },
     {
       "name": "Effect",
