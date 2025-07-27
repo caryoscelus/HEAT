@@ -433,6 +433,38 @@
         "name": "assets/hospital-flower.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/convinience-store.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/convinience-store.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/store-cashier.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/store-cashier.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/store-gate-enter.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/store-gate-enter.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/store-gate-exit.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/store-gate-exit.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -447,6 +479,12 @@
       "variables": [],
       "effects": [],
       "behaviors": [
+        {
+          "name": "DistanceZoom",
+          "type": "DistanceZoom::DistanceZoom",
+          "ZoomAt0": 1,
+          "ZoomAtInf": 0
+        },
         {
           "isFolded": true,
           "name": "SmoothCamera",
@@ -517,6 +555,7 @@
           "viewpoint": "TopDown"
         },
         {
+          "isFolded": true,
           "name": "TopDownMovementAnimator",
           "type": "TopDownMovementAnimator::TopDownMovementAnimator",
           "Animation": "Animation",
@@ -957,6 +996,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/base-scene"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/convinience-store"
     }
   ],
   "externalEvents": [
@@ -1005,6 +1048,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/money"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/distancezoom"
     }
   ],
   "externalLayouts": [

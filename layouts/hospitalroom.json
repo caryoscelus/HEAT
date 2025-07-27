@@ -585,6 +585,10 @@
       "type": "AnimatableCapability::AnimatableBehavior"
     },
     {
+      "name": "DistanceZoom",
+      "type": "DistanceZoom::DistanceZoom"
+    },
+    {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
     },

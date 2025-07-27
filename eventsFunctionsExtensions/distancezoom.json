@@ -1,0 +1,109 @@
+{
+  "author": "",
+  "category": "Visual effect",
+  "extensionNamespace": "",
+  "fullName": "",
+  "gdevelopVersion": "",
+  "helpPath": "",
+  "iconUrl": "",
+  "name": "DistanceZoom",
+  "previewIconUrl": "",
+  "shortDescription": "Zooms characters/objects depending on their distance from the front (i.e. Y coord)",
+  "version": "",
+  "description": "",
+  "tags": [],
+  "authorIds": [],
+  "dependencies": [],
+  "globalVariables": [],
+  "sceneVariables": [],
+  "eventsFunctions": [],
+  "eventsBasedBehaviors": [
+    {
+      "description": "",
+      "fullName": "",
+      "name": "DistanceZoom",
+      "objectType": "Sprite",
+      "eventsFunctions": [
+        {
+          "fullName": "",
+          "functionType": "Action",
+          "name": "doStepPreEvents",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "q",
+                    "=",
+                    "(SceneWindowHeight() - Object.Y()) / SceneWindowHeight()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Scale",
+                    "=",
+                    "q*ZoomAtInf + (1-q)*ZoomAt0"
+                  ]
+                }
+              ],
+              "variables": [
+                {
+                  "name": "q",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "Sprite",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "DistanceZoom::DistanceZoom",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "propertyDescriptors": [
+        {
+          "value": "1",
+          "type": "Number",
+          "label": "Base zoom",
+          "description": "Zoom level of an object when it's at zero distance (i.e. at the bottom of the screen)",
+          "group": "",
+          "extraInformation": [],
+          "name": "ZoomAt0"
+        },
+        {
+          "value": "0",
+          "type": "Number",
+          "label": "Final zoom",
+          "description": "Zoom level of an object when it's at max distance (i.e. at the top of the screen) (NOTE: this can be negative, but make sure object cannot end up there)",
+          "group": "",
+          "extraInformation": [],
+          "name": "ZoomAtInf"
+        }
+      ],
+      "sharedPropertyDescriptors": []
+    }
+  ],
+  "eventsBasedObjects": []
+}

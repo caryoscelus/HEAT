@@ -31,11 +31,6 @@
       "value": 1
     },
     {
-      "name": "money",
-      "type": "number",
-      "value": 0
-    },
-    {
       "name": "timeOfDay",
       "type": "number",
       "value": 0
@@ -53,7 +48,7 @@
       "fullName": "",
       "functionType": "Action",
       "name": "advanceTime",
-      "sentence": "",
+      "sentence": "Advance time by _PARAM1_",
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -66,7 +61,7 @@
               "parameters": [
                 "time",
                 "+",
-                "1"
+                "dt"
               ]
             },
             {
@@ -76,12 +71,72 @@
               "parameters": [
                 "timeOfDay",
                 "=",
-                "mod(time, 4)"
+                "mod(floor(time), 4)"
               ]
             }
           ]
         }
       ],
+      "parameters": [
+        {
+          "description": "Time difference",
+          "name": "dt",
+          "type": "expression"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "fullName": "",
+      "functionType": "Expression",
+      "name": "getTime",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "time"
+              ]
+            }
+          ]
+        }
+      ],
+      "expressionType": {
+        "type": "expression"
+      },
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "fullName": "",
+      "functionType": "Expression",
+      "name": "getTimeOfDay",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "timeOfDay"
+              ]
+            }
+          ]
+        }
+      ],
+      "expressionType": {
+        "type": "expression"
+      },
       "parameters": [],
       "objectGroups": []
     }
