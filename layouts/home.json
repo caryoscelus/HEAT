@@ -26,7 +26,7 @@
       "name": "impassable",
       "objects": [
         {
-          "name": "wall_out"
+          "name": "invisibleWall"
         },
         {
           "name": "door"
@@ -99,7 +99,7 @@
       "height": 146,
       "keepRatio": true,
       "layer": "",
-      "name": "wall_out",
+      "name": "invisibleWall",
       "persistentUuid": "f10193f9-b340-4bb5-a328-fc2f7437079f",
       "width": 1780,
       "x": -425,
@@ -133,7 +133,7 @@
       "height": 703,
       "keepRatio": true,
       "layer": "",
-      "name": "wall_out",
+      "name": "invisibleWall",
       "persistentUuid": "55e55d41-974a-4d65-acaa-f6709d74497d",
       "width": 280,
       "x": 800,
@@ -167,7 +167,7 @@
       "height": 682,
       "keepRatio": true,
       "layer": "",
-      "name": "wall_out",
+      "name": "invisibleWall",
       "persistentUuid": "c5f4a715-6a60-4b33-94cd-6548c46655cd",
       "width": 282,
       "x": -523,
@@ -267,7 +267,7 @@
       "height": 1164,
       "keepRatio": true,
       "layer": "",
-      "name": "wall_out",
+      "name": "invisibleWall",
       "persistentUuid": "419a2724-ecf0-4983-b27b-c43c2734a295",
       "width": 722,
       "x": 947,
@@ -284,7 +284,7 @@
       "height": 608,
       "keepRatio": true,
       "layer": "",
-      "name": "wall_out",
+      "name": "invisibleWall",
       "persistentUuid": "5c52f93d-0e97-43d9-b50e-8d916960b298",
       "width": 574,
       "x": 493,
@@ -301,7 +301,7 @@
       "height": 608,
       "keepRatio": true,
       "layer": "",
-      "name": "wall_out",
+      "name": "invisibleWall",
       "persistentUuid": "08ace492-3cd0-4dd5-bd89-5f7b28895606",
       "width": 574,
       "x": -496,
@@ -318,7 +318,7 @@
       "height": 107,
       "keepRatio": true,
       "layer": "",
-      "name": "wall_out",
+      "name": "invisibleWall",
       "persistentUuid": "6ee64123-a9fb-4164-8c77-4b5ac44ce17c",
       "width": 526,
       "x": -148,
@@ -413,149 +413,6 @@
     }
   ],
   "objects": [
-    {
-      "assetStoreId": "e71bd69f896d6c7531b48c65ceb5da25071d4fbdeb518aeceecba8d21f34ed8d",
-      "name": "Joystick",
-      "type": "SpriteMultitouchJoystick::SpriteMultitouchJoystick",
-      "variant": "",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {},
-      "childrenContent": {
-        "Border": {
-          "adaptCollisionMaskAutomatically": false,
-          "updateIfNotVisible": false,
-          "animations": [
-            {
-              "name": "Idle",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Flat dark joystick border.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        "Thumb": {
-          "adaptCollisionMaskAutomatically": false,
-          "updateIfNotVisible": false,
-          "animations": [
-            {
-              "name": "Idle",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Flat dark joystick thumb.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      }
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "wall_out",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "black-square",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "black-square",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 64,
-                        "y": 0
-                      },
-                      {
-                        "x": 64,
-                        "y": 64
-                      },
-                      {
-                        "x": 0,
-                        "y": 64
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
     {
       "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
@@ -1840,17 +1697,6 @@
     "folderName": "__ROOT",
     "children": [
       {
-        "folderName": "Mobile Controls",
-        "children": [
-          {
-            "objectName": "Joystick"
-          }
-        ]
-      },
-      {
-        "objectName": "wall_out"
-      },
-      {
         "objectName": "door"
       },
       {
@@ -2023,7 +1869,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Player",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2686,6 +2531,10 @@
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "DistanceZoom",
+      "type": "DistanceZoom::DistanceZoom"
     },
     {
       "name": "Effect",
