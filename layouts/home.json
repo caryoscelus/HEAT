@@ -2024,7 +2024,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Player",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2042,6 +2041,32 @@
                 "impassable",
                 ""
               ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SmoothCamera::SmoothCamera::SetFollowOnX"
+              },
+              "parameters": [
+                "player",
+                "SmoothCamera",
+                "yes",
+                ""
+              ]
             },
             {
               "type": {
@@ -2051,6 +2076,18 @@
                 "player",
                 "SmoothCamera",
                 "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "DistanceZoom::DistanceZoom::setZoomLevels"
+              },
+              "parameters": [
+                "player",
+                "DistanceZoom",
+                "1.5",
+                "0.5",
                 ""
               ]
             }

@@ -442,7 +442,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Camera",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -464,6 +463,17 @@
             },
             {
               "type": {
+                "value": "SmoothCamera::SmoothCamera::SetFollowOnX"
+              },
+              "parameters": [
+                "player",
+                "SmoothCamera",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "Tween::TweenCameraZoom2"
               },
               "parameters": [
@@ -473,6 +483,18 @@
                 "",
                 "\"linear\"",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "DistanceZoom::DistanceZoom::setZoomLevels"
+              },
+              "parameters": [
+                "player",
+                "DistanceZoom",
+                "1",
+                "1",
+                ""
               ]
             }
           ]
