@@ -1074,16 +1074,6 @@
       "value": false
     },
     {
-      "name": "time",
-      "type": "number",
-      "value": 0
-    },
-    {
-      "name": "timeOfDay",
-      "type": "number",
-      "value": 0
-    },
-    {
       "name": "debug",
       "type": "boolean",
       "value": false
@@ -1127,7 +1117,7 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/hospitalroom"
+      "referenceTo": "/layouts/hospital-room"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,

@@ -1,8 +1,8 @@
 {
   "b": 221,
   "disableInputWhenNotFocused": true,
-  "mangledName": "HospitalRoom",
-  "name": "HospitalRoom",
+  "mangledName": "Hospital_32Room",
+  "name": "Hospital Room",
   "r": 221,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -452,6 +452,17 @@
             "=",
             "1"
           ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "player",
+            "Animation",
+            "=",
+            "\"lie-in-bed\""
+          ]
         }
       ]
     },
@@ -506,6 +517,18 @@
             "=",
             "\"watch-tv\""
           ]
+        },
+        {
+          "type": {
+            "value": "DistanceZoom::DistanceZoom::setZoomLevels"
+          },
+          "parameters": [
+            "player",
+            "DistanceZoom",
+            "1.5",
+            "0.4",
+            ""
+          ]
         }
       ]
     },
@@ -545,6 +568,15 @@
             "100",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "HideLayer"
+          },
+          "parameters": [
+            "",
+            "\"UI\""
+          ]
         }
       ]
     }
@@ -576,6 +608,23 @@
           "width": 0
         }
       ],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "UI",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
       "effects": []
     }
   ],

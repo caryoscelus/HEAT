@@ -1776,12 +1776,13 @@
                 "debug_text",
                 "Text",
                 "=",
-                "\"Time: \" + ToString(time) + \"\nSleep attempts: \" + ToString(sleepAttempts)"
+                "\"Time: \" + ToString(HeatGame::getTime()) + \"\nSleep attempts: \" + ToString(sleepAttempts)"
               ]
             }
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2124,12 +2125,12 @@
             },
             {
               "type": {
-                "value": "SetNumberVariable"
+                "value": "HeatGame::advanceTime"
               },
               "parameters": [
-                "time",
-                "+",
-                "1"
+                "",
+                "0.5",
+                ""
               ]
             }
           ]
@@ -2142,7 +2143,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Thermal",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2188,7 +2188,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Sleep",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2375,16 +2374,6 @@
                 },
                 {
                   "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "time",
-                    "+",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
                   },
                   "parameters": [
@@ -2401,6 +2390,16 @@
                   "parameters": [
                     "lockActions",
                     "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HeatGame::advanceTime"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
                     ""
                   ]
                 }
