@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.6337626779315086,
+    "zoomFactor": 0.6897782140104548,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -33,8 +33,8 @@
       "name": "exit",
       "persistentUuid": "08285091-465f-4776-873a-bcbfaab2b90e",
       "width": 0,
-      "x": 415,
-      "y": 614,
+      "x": 602,
+      "y": 674,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -84,8 +84,8 @@
       "name": "vase",
       "persistentUuid": "e5ad5cb3-d96e-4a4a-a197-4a47e99d4baf",
       "width": 48,
-      "x": 419,
-      "y": 181,
+      "x": 440,
+      "y": 152,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
@@ -101,8 +101,8 @@
       "name": "flower",
       "persistentUuid": "b2c4bc94-e1ad-4991-a17c-4e138fba7374",
       "width": 43,
-      "x": 429,
-      "y": 145,
+      "x": 450,
+      "y": 123,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -118,8 +118,8 @@
       "name": "flower",
       "persistentUuid": "268c7c0a-785e-4b0e-9ad8-6bcc0cd8a951",
       "width": 43,
-      "x": 418,
-      "y": 152,
+      "x": 442,
+      "y": 129,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -136,8 +136,8 @@
       "name": "nightstand",
       "persistentUuid": "463151d0-5c75-4d2e-bca4-4183edfa3567",
       "width": 158,
-      "x": 353,
-      "y": 192,
+      "x": 374,
+      "y": 163,
       "zOrder": -2,
       "numberProperties": [],
       "stringProperties": [],
@@ -153,8 +153,8 @@
       "name": "note",
       "persistentUuid": "970df544-9aba-49f0-8b57-dd7baf207c4b",
       "width": 74,
-      "x": 406,
-      "y": 214,
+      "x": 427,
+      "y": 185,
       "zOrder": -1,
       "numberProperties": [],
       "stringProperties": [],
@@ -169,9 +169,196 @@
       "name": "note_button",
       "persistentUuid": "bba3ca7b-489e-477b-80b7-98f91d402d93",
       "width": 0,
-      "x": 413,
-      "y": 322,
+      "x": 426,
+      "y": 291,
       "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 41,
+      "keepRatio": true,
+      "layer": "",
+      "name": "invisibleWall",
+      "persistentUuid": "7cc451c1-579f-43f5-8747-0cfafe71559b",
+      "width": 95,
+      "x": 404,
+      "y": 240,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "",
+      "name": "invisibleWall",
+      "persistentUuid": "35627b62-733b-4c8c-967d-a161c0c6c32c",
+      "width": 809,
+      "x": 269,
+      "y": 177,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 129,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "",
+      "name": "invisibleWall",
+      "persistentUuid": "025dd62d-18da-4251-b261-19cbc07ffb59",
+      "width": 892,
+      "x": -241,
+      "y": 352,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 229,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "",
+      "name": "invisibleWall",
+      "persistentUuid": "3bd5ec2e-bc94-4852-8aea-63a9c3d3889e",
+      "width": 892,
+      "x": 648,
+      "y": 452,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 357,
+      "customSize": true,
+      "depth": 1,
+      "height": 356,
+      "keepRatio": true,
+      "layer": "",
+      "name": "window",
+      "persistentUuid": "7803b594-6d7a-47cc-ae45-27a53d6a21d8",
+      "width": 199,
+      "x": 904,
+      "y": 57,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 120,
+      "keepRatio": true,
+      "layer": "",
+      "name": "invisibleWall",
+      "persistentUuid": "8202262b-b427-4716-9dcf-ffa1ecc68a2d",
+      "width": 809,
+      "x": -288,
+      "y": 647,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 126,
+      "keepRatio": true,
+      "layer": "",
+      "name": "invisibleWall",
+      "persistentUuid": "8ef2d2ce-5434-4e27-b0e4-8e960167abd7",
+      "width": 809,
+      "x": 766,
+      "y": 646,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 82,
+      "keepRatio": true,
+      "layer": "",
+      "name": "picture",
+      "persistentUuid": "bbc242f4-dfb5-4b56-8d7f-f320ffd4916e",
+      "width": 121,
+      "x": 561,
+      "y": 42,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 126,
+      "keepRatio": true,
+      "layer": "",
+      "name": "invisibleWall",
+      "persistentUuid": "4e198fcd-c8e7-4178-ab60-33c1c962bd8b",
+      "width": 809,
+      "x": 301,
+      "y": 733,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 162,
+      "keepRatio": true,
+      "layer": "",
+      "name": "black_border",
+      "persistentUuid": "1ae3858f-85a8-4441-9191-aa188bbb1ce0",
+      "width": 865,
+      "x": -347,
+      "y": 649,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 162,
+      "keepRatio": true,
+      "layer": "",
+      "name": "black_border",
+      "persistentUuid": "c31006e2-73f0-40d3-9c94-7e892b64ebad",
+      "width": 865,
+      "x": 765,
+      "y": 645,
+      "zOrder": 17,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -271,8 +458,8 @@
                         "y": 83.5
                       },
                       {
-                        "x": 441,
-                        "y": 79.5
+                        "x": 437,
+                        "y": 87.5
                       },
                       {
                         "x": 644,
@@ -645,13 +832,13 @@
     },
     {
       "assetStoreId": "",
-      "name": "NewBBText",
+      "name": "note_text",
       "type": "BBText::BBText",
       "variables": [],
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "Hello my friend! I've heard your op was a brilliant success and you'll be discharged from ICU soon. Well, since you're reading it, you're [i]already[/i] out! Congrats. I don't want to burden you with technicalities in your condition, but I just need to relay some info anyway: I found you a new beatiful house so that don't need to go into trouble of managing your old mansion and can properly rest when you get discharged from the very room you're reading this right now. The nurse shall arrange a taxi for you when the time comes, so no worries! I attach the key to this letter. Stay safe now, get some rest you so deserve!",
+        "text": "Hello my friend! I've heard your op was a brilliant success and you'll be discharged from ICU soon. Well, since you're reading it, you're [i]already[/i] out! Congrats. I don't want to burden you with technicalities in your condition, but I just need to relay some info anyway: I found you a new beautiful house so that don't need to go into trouble of managing your old mansion and can properly rest when you get discharged from the very room you're reading this right now. The nurse shall arrange a taxi for you when the time comes, so no worries! I attach the key to this letter. Stay safe now, get some rest you so deserve!",
         "opacity": 255,
         "fontSize": 25,
         "visible": true,
@@ -660,6 +847,187 @@
         "align": "left",
         "verticalTextAlignment": "top"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "window",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/hospital-window.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1418,
+                        "y": 232
+                      },
+                      {
+                        "x": 1657,
+                        "y": 232
+                      },
+                      {
+                        "x": 1657,
+                        "y": 735
+                      },
+                      {
+                        "x": 1418,
+                        "y": 735
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "picture",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/hospital-picture.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 45,
+                        "y": 46
+                      },
+                      {
+                        "x": 247,
+                        "y": 46
+                      },
+                      {
+                        "x": 247,
+                        "y": 159
+                      },
+                      {
+                        "x": 45,
+                        "y": 159
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "black_border",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "black-full",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "black-full",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -690,7 +1058,16 @@
         "objectName": "paper"
       },
       {
-        "objectName": "NewBBText"
+        "objectName": "note_text"
+      },
+      {
+        "objectName": "window"
+      },
+      {
+        "objectName": "picture"
+      },
+      {
+        "objectName": "black_border"
       }
     ]
   },
@@ -724,7 +1101,7 @@
           },
           "parameters": [
             "",
-            "\"City\"",
+            "\"Home\"",
             ""
           ]
         }
@@ -844,11 +1221,24 @@
         },
         {
           "type": {
-            "value": "HideLayer"
+            "value": "SmoothCamera::SmoothCamera::SetFollowOnX"
           },
           "parameters": [
+            "player",
+            "SmoothCamera",
             "",
-            "\"Text\""
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SmoothCamera::SmoothCamera::SetFollowOnY"
+          },
+          "parameters": [
+            "player",
+            "SmoothCamera",
+            "",
+            ""
           ]
         }
       ]
@@ -906,10 +1296,35 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Note",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Text\""
+              ]
+            }
+          ]
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [

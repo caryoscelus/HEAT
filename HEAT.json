@@ -1,5 +1,5 @@
 {
-  "firstLayout": "",
+  "firstLayout": "Menu",
   "gdVersion": {
     "build": 229,
     "major": 5,
@@ -18,13 +18,13 @@
     "scaleMode": "linear",
     "sizeOnStartupMode": "",
     "templateSlug": "starting-top-down",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "name": "HEAT",
     "description": "",
     "author": "caryoscelus",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "",
+    "latestCompilationDirectory": "/home/caryoscelus/Development/GDevelop/HEAT-builds/2025.07.27-2",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -535,6 +535,30 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "NewSprite",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hospital-window.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/hospital-window.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hospital-picture.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/hospital-picture.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/black-full.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "black-full",
         "smoothed": true,
         "userAdded": false
       }
@@ -1737,6 +1761,10 @@
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/menu"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/home"
     },
     {
@@ -1758,10 +1786,6 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/hospital-room"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/menu"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,

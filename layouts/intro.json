@@ -185,6 +185,10 @@
       "type": "AnimatableCapability::AnimatableBehavior"
     },
     {
+      "name": "DistanceZoom",
+      "type": "DistanceZoom::DistanceZoom"
+    },
+    {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
     },
@@ -207,6 +211,10 @@
     {
       "name": "SmoothCamera",
       "type": "SmoothCamera::SmoothCamera"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "TopDownMovement",

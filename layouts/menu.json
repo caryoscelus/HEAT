@@ -366,6 +366,10 @@
       "type": "ButtonStates::ButtonFSM"
     },
     {
+      "name": "DistanceZoom",
+      "type": "DistanceZoom::DistanceZoom"
+    },
+    {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
     },

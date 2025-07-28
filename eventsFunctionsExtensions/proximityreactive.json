@@ -200,7 +200,7 @@
                   "parameters": [
                     "Object",
                     "Target",
-                    "160",
+                    "Distance + 40",
                     ""
                   ]
                 }
@@ -268,7 +268,7 @@
                       "parameters": [
                         "Object",
                         "Target",
-                        "120",
+                        "Distance",
                         ""
                       ]
                     },
@@ -380,7 +380,18 @@
           "objectGroups": []
         }
       ],
-      "propertyDescriptors": [],
+      "propertyDescriptors": [
+        {
+          "value": "120",
+          "type": "Number",
+          "unit": "Pixel",
+          "label": "",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "name": "Distance"
+        }
+      ],
       "sharedPropertyDescriptors": []
     }
   ],

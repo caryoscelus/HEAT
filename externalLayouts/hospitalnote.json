@@ -26,7 +26,7 @@
       "height": 367,
       "keepRatio": true,
       "layer": "Text",
-      "name": "NewBBText",
+      "name": "note_text",
       "persistentUuid": "ddb95460-3440-48ee-a39c-a1e645860113",
       "width": 689,
       "x": 288,

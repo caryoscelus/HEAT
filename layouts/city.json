@@ -75,22 +75,6 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "other_house_button",
-      "persistentUuid": "c3a03a0c-7424-4dd0-a98f-99c909105234",
-      "width": 0,
-      "x": 814,
-      "y": 515,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "depth": 2,
       "flippedX": true,

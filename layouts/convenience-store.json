@@ -120,8 +120,8 @@
       "name": "exit_button",
       "persistentUuid": "ddfa9278-8b27-4e2b-b238-487b0a85be2e",
       "width": 0,
-      "x": 170,
-      "y": 693,
+      "x": 179,
+      "y": 697,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -596,7 +596,8 @@
       "behaviors": [
         {
           "name": "ProximityReactive",
-          "type": "ProximityReactive::ProximityReactive"
+          "type": "ProximityReactive::ProximityReactive",
+          "Distance": 20
         }
       ],
       "string": "EXIT",
