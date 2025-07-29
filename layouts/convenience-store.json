@@ -952,7 +952,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Gates",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -990,12 +989,11 @@
           "conditions": [
             {
               "type": {
-                "value": "NumberVariable"
+                "value": "HeatGame::isBuyListEmpty"
               },
               "parameters": [
-                "checkSum",
-                "=",
-                "0"
+                "",
+                ""
               ]
             }
           ],
@@ -1019,12 +1017,12 @@
           "conditions": [
             {
               "type": {
-                "value": "NumberVariable"
+                "inverted": true,
+                "value": "HeatGame::isBuyListEmpty"
               },
               "parameters": [
-                "checkSum",
-                ">",
-                "0"
+                "",
+                ""
               ]
             }
           ],
@@ -1067,7 +1065,7 @@
                 "checkSumDisplay",
                 "Text",
                 "=",
-                "ToString(checkSum)"
+                "ToString(HeatGame::getCheckSum())"
               ]
             }
           ]
@@ -1087,109 +1085,17 @@
               ]
             }
           ],
-          "actions": [],
-          "events": [
+          "actions": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "ArrayTools::HasString"
-                  },
-                  "parameters": [
-                    "",
-                    "products",
-                    "\"bread\"",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PushString"
-                  },
-                  "parameters": [
-                    "products",
-                    "\"bread\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "checkSum",
-                    "+",
-                    "3"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanVariable"
-                  },
-                  "parameters": [
-                    "processed",
-                    "True",
-                    ""
-                  ]
-                }
+              "type": {
+                "value": "HeatGame::processBuyList"
+              },
+              "parameters": [
+                "",
+                "\"bread\"",
+                "3",
+                "\"vegetables\""
               ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "ArrayTools::HasString"
-                  },
-                  "parameters": [
-                    "",
-                    "products",
-                    "\"bread\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BooleanVariable"
-                  },
-                  "parameters": [
-                    "processed",
-                    "=",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "RemoveVariableAt"
-                  },
-                  "parameters": [
-                    "products",
-                    "ArrayTools::IndexOfStr(products, \"bread\")"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "checkSum",
-                    "-",
-                    "3"
-                  ]
-                }
-              ]
-            }
-          ],
-          "variables": [
-            {
-              "name": "processed",
-              "type": "boolean",
-              "value": false
             }
           ]
         },
@@ -1208,7 +1114,19 @@
               ]
             }
           ],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "HeatGame::processBuyList"
+              },
+              "parameters": [
+                "",
+                "\"vegetables\"",
+                "5",
+                "\"vegetables\""
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
