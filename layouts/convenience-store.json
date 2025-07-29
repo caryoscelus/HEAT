@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.0973679695629508,
+    "zoomFactor": 0.8993607583666621,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -27,6 +27,11 @@
       "name": "checkSum",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "products",
+      "type": "array",
+      "children": []
     }
   ],
   "instances": [
@@ -310,6 +315,54 @@
       "x": 851,
       "y": 579,
       "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "bread_button",
+      "persistentUuid": "920e17a5-3169-4128-8607-5bb544505081",
+      "width": 0,
+      "x": 695,
+      "y": 384,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "veggie_button",
+      "persistentUuid": "4526e0b7-d901-447c-becd-42a24f54230d",
+      "width": 0,
+      "x": 444,
+      "y": 386,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "checkSumDisplay",
+      "persistentUuid": "91f38933-048f-4325-977b-41dee7c066ea",
+      "width": 0,
+      "x": 605,
+      "y": 21,
+      "zOrder": 18,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -630,6 +683,144 @@
         "characterSize": 20,
         "color": "0;0;0"
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "bread_button",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ProximityReactive",
+          "type": "ProximityReactive::ProximityReactive",
+          "Distance": 120
+        }
+      ],
+      "string": "BREAD",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "BREAD",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "veggie_button",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ProximityReactive",
+          "type": "ProximityReactive::ProximityReactive",
+          "Distance": 120
+        }
+      ],
+      "string": "VEGETABLES",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "VEGETABLES",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "checkSumDisplay",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "$$$",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "$$$",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -649,6 +840,15 @@
       },
       {
         "objectName": "exit_button"
+      },
+      {
+        "objectName": "bread_button"
+      },
+      {
+        "objectName": "veggie_button"
+      },
+      {
+        "objectName": "checkSumDisplay"
       }
     ]
   },
@@ -711,92 +911,6 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "OneWayGate::OneWayGate::processGate"
-          },
-          "parameters": [
-            "gate_enter",
-            "OneWayGate",
-            "player",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "OneWayGate::OneWayGate::processGate"
-          },
-          "parameters": [
-            "gate_exit",
-            "OneWayGate",
-            "player",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "NumberVariable"
-          },
-          "parameters": [
-            "checkSum",
-            "=",
-            "0"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "OneWayGate::OneWayGate::setGate"
-          },
-          "parameters": [
-            "gate_exit",
-            "OneWayGate",
-            "False",
-            "True",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "NumberVariable"
-          },
-          "parameters": [
-            "checkSum",
-            ">",
-            "0"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "OneWayGate::OneWayGate::setGate"
-          },
-          "parameters": [
-            "gate_exit",
-            "OneWayGate",
-            "False",
-            "False",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
@@ -832,6 +946,272 @@
           ]
         }
       ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Gates",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "OneWayGate::OneWayGate::processGate"
+              },
+              "parameters": [
+                "gate_enter",
+                "OneWayGate",
+                "player",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "OneWayGate::OneWayGate::processGate"
+              },
+              "parameters": [
+                "gate_exit",
+                "OneWayGate",
+                "player",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "checkSum",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "OneWayGate::OneWayGate::setGate"
+              },
+              "parameters": [
+                "gate_exit",
+                "OneWayGate",
+                "False",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "checkSum",
+                ">",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "OneWayGate::OneWayGate::setGate"
+              },
+              "parameters": [
+                "gate_exit",
+                "OneWayGate",
+                "False",
+                "False",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Groceries",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "checkSumDisplay",
+                "Text",
+                "=",
+                "ToString(checkSum)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ProximityReactive::ProximityReactive::IsActivated"
+              },
+              "parameters": [
+                "bread_button",
+                "ProximityReactive",
+                "player",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "ArrayTools::HasString"
+                  },
+                  "parameters": [
+                    "",
+                    "products",
+                    "\"bread\"",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PushString"
+                  },
+                  "parameters": [
+                    "products",
+                    "\"bread\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "checkSum",
+                    "+",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "processed",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ArrayTools::HasString"
+                  },
+                  "parameters": [
+                    "",
+                    "products",
+                    "\"bread\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "processed",
+                    "=",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "RemoveVariableAt"
+                  },
+                  "parameters": [
+                    "products",
+                    "ArrayTools::IndexOfStr(products, \"bread\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "checkSum",
+                    "-",
+                    "3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "variables": [
+            {
+              "name": "processed",
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ProximityReactive::ProximityReactive::IsActivated"
+              },
+              "parameters": [
+                "veggie_button",
+                "ProximityReactive",
+                "player",
+                ""
+              ]
+            }
+          ],
+          "actions": []
+        }
+      ],
+      "parameters": []
     }
   ],
   "layers": [
