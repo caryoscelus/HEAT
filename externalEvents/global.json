@@ -323,6 +323,122 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Movement",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"w\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::SimulateControl"
+              },
+              "parameters": [
+                "player",
+                "TopDownMovement",
+                "\"Up\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"a\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::SimulateControl"
+              },
+              "parameters": [
+                "player",
+                "TopDownMovement",
+                "\"Left\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"s\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::SimulateControl"
+              },
+              "parameters": [
+                "player",
+                "TopDownMovement",
+                "\"Down\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"d\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::SimulateControl"
+              },
+              "parameters": [
+                "player",
+                "TopDownMovement",
+                "\"Right\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
     }
   ]
 }

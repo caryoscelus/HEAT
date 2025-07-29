@@ -39,6 +39,16 @@
       "name": "currentTemperature",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "sleepiness",
+      "type": "number",
+      "value": 0.5
+    },
+    {
+      "name": "nextDream",
+      "type": "number",
+      "value": 0
     }
   ],
   "sceneVariables": [
@@ -103,6 +113,117 @@
           "type": "expression"
         }
       ],
+      "objectGroups": []
+    },
+    {
+      "fullName": "",
+      "functionType": "Action",
+      "name": "tryToSleep",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "HeatGame::advanceTime"
+              },
+              "parameters": [
+                "",
+                "0.1",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "sleepiness",
+                ">",
+                "RandomFloat(1)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PushScene"
+              },
+              "parameters": [
+                "",
+                "\"Dream \" + ToString(nextDream)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "sleepiness",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "fullName": "",
+      "functionType": "Condition",
+      "name": "cantSleep",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnBoolean"
+              },
+              "parameters": [
+                "False"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "sleepiness",
+                "<=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnBoolean"
+              },
+              "parameters": [
+                "True"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [],
       "objectGroups": []
     },
     {

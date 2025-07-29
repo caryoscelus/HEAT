@@ -335,6 +335,13 @@
   },
   "events": [
     {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Global"
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -398,6 +405,17 @@
         {
           "type": {
             "value": "SmoothCamera::SmoothCamera::SetFollowOnY"
+          },
+          "parameters": [
+            "player",
+            "SmoothCamera",
+            "yes",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SmoothCamera::SmoothCamera::SetFollowOnX"
           },
           "parameters": [
             "player",

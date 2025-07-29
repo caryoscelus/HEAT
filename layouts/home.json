@@ -32,11 +32,6 @@
       "name": "sleepAttempts",
       "type": "number",
       "value": 0
-    },
-    {
-      "name": "sleepiness",
-      "type": "number",
-      "value": 0.5
     }
   ],
   "instances": [
@@ -1923,7 +1918,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "TV",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1954,14 +1948,6 @@
                 "0",
                 "0",
                 "\"Effects\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "watchtv_button"
               ]
             },
             {
@@ -2204,6 +2190,15 @@
                     "+",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "HeatGame::tryToSleep"
+                  },
+                  "parameters": [
+                    "",
+                    ""
+                  ]
                 }
               ]
             },
@@ -2212,25 +2207,15 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "NumberVariable"
+                    "value": "HeatGame::cantSleep"
                   },
                   "parameters": [
-                    "sleepiness",
-                    ">",
-                    "RandomFloat(1)"
+                    "",
+                    ""
                   ]
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "value": "PushScene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Dream \" + ToString(nextDream)"
-                  ]
-                },
                 {
                   "type": {
                     "value": "SetNumberVariable"
@@ -2287,16 +2272,6 @@
                   "parameters": [
                     "lockActions",
                     "False",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "HeatGame::advanceTime"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
                     ""
                   ]
                 }
