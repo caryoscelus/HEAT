@@ -356,13 +356,29 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
+      "layer": "UI",
       "name": "checkSumDisplay",
       "persistentUuid": "91f38933-048f-4325-977b-41dee7c066ea",
       "width": 0,
       "x": 605,
       "y": 21,
       "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "cashier_button",
+      "persistentUuid": "66361864-40b9-4162-afbb-e777272f50a6",
+      "width": 0,
+      "x": 327,
+      "y": 593,
+      "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -658,14 +674,14 @@
       "textAlignment": "left",
       "characterSize": 20,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "b": 255,
+        "g": 255,
+        "r": 255
       },
       "content": {
         "bold": false,
         "isOutlineEnabled": false,
-        "isShadowEnabled": false,
+        "isShadowEnabled": true,
         "italic": false,
         "outlineColor": "255;255;255",
         "outlineThickness": 2,
@@ -681,7 +697,7 @@
         "textAlignment": "left",
         "verticalTextAlignment": "top",
         "characterSize": 20,
-        "color": "0;0;0"
+        "color": "255;255;255"
       }
     },
     {
@@ -821,6 +837,54 @@
         "characterSize": 20,
         "color": "0;0;0"
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "cashier_button",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ProximityReactive",
+          "type": "ProximityReactive::ProximityReactive",
+          "Distance": 120
+        }
+      ],
+      "string": "PAY",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 250,
+        "g": 250,
+        "r": 250
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "PAY",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "color": "250;250;250"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -849,6 +913,9 @@
       },
       {
         "objectName": "checkSumDisplay"
+      },
+      {
+        "objectName": "cashier_button"
       }
     ]
   },
@@ -1088,7 +1155,7 @@
           "actions": [
             {
               "type": {
-                "value": "HeatGame::processBuyList"
+                "value": "HeatGame::processBuyListItem"
               },
               "parameters": [
                 "",
@@ -1117,13 +1184,131 @@
           "actions": [
             {
               "type": {
-                "value": "HeatGame::processBuyList"
+                "value": "HeatGame::processBuyListItem"
               },
               "parameters": [
                 "",
                 "\"vegetables\"",
                 "5",
                 "\"vegetables\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "ProximityReactive::ProximityReactive::IsActivated"
+          },
+          "parameters": [
+            "cashier_button",
+            "ProximityReactive",
+            "player",
+            ""
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "Money::getMoney()",
+                "<",
+                "HeatGame::getCheckSum()"
+              ]
+            }
+          ],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "Money::getMoney()",
+                ">=",
+                "HeatGame::getCheckSum()"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Money::spendMoney"
+              },
+              "parameters": [
+                "",
+                "HeatGame::getCheckSum()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "HeatGame::takeBuyItemsHome"
+              },
+              "parameters": [
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Debug",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "debug",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Money::receiveFunds"
+              },
+              "parameters": [
+                "",
+                "100",
+                ""
               ]
             }
           ]

@@ -148,7 +148,7 @@
     {
       "fullName": "",
       "functionType": "Action",
-      "name": "processBuyList",
+      "name": "processBuyListItem",
       "sentence": "",
       "events": [
         {
@@ -297,6 +297,70 @@
     },
     {
       "fullName": "",
+      "functionType": "Action",
+      "name": "takeBuyItemsHome",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "checkSum",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::ForEachChildVariable",
+              "iterableVariableName": "products",
+              "valueIteratorVariableName": "item",
+              "keyIteratorVariableName": "",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "HeatGame::takeHome"
+                  },
+                  "parameters": [
+                    "",
+                    "item",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "variables": [
+            {
+              "name": "item",
+              "type": "string",
+              "value": "0"
+            }
+          ]
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "fullName": "",
       "functionType": "Expression",
       "name": "getCheckSum",
       "sentence": "",
@@ -380,6 +444,38 @@
         }
       ],
       "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "fullName": "",
+      "functionType": "Action",
+      "name": "takeHome",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "DebuggerTools::ConsoleLog"
+              },
+              "parameters": [
+                "\"took home: \" + what",
+                "\"info\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "",
+          "name": "what",
+          "type": "string"
+        }
+      ],
       "objectGroups": []
     }
   ],
