@@ -561,6 +561,14 @@
         "name": "black-full",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/kitchen.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/kitchen.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1775,7 +1783,31 @@
       }
     ]
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "impassable",
+      "objects": [
+        {
+          "name": "invisibleWall"
+        },
+        {
+          "name": "door"
+        },
+        {
+          "name": "wall"
+        },
+        {
+          "name": "sofa"
+        },
+        {
+          "name": "bed"
+        },
+        {
+          "name": "WIP"
+        }
+      ]
+    }
+  ],
   "variables": [
     {
       "name": "lockActions",

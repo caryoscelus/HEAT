@@ -21,42 +21,7 @@
     "zoomFactor": 0.3111974942445249,
     "windowMask": false
   },
-  "objectsGroups": [
-    {
-      "name": "impassable",
-      "objects": [
-        {
-          "name": "invisibleWall"
-        },
-        {
-          "name": "door"
-        },
-        {
-          "name": "wall"
-        },
-        {
-          "name": "sofa"
-        },
-        {
-          "name": "bed"
-        }
-      ]
-    },
-    {
-      "name": "Action",
-      "objects": [
-        {
-          "name": "leave_button"
-        },
-        {
-          "name": "watchtv_button"
-        },
-        {
-          "name": "sleep_button"
-        }
-      ]
-    }
-  ],
+  "objectsGroups": [],
   "variables": [
     {
       "name": "roomTemperature",
@@ -414,55 +379,6 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 494,
-      "keepRatio": true,
-      "layer": "",
-      "name": "floor",
-      "persistentUuid": "7414d7a5-075c-4428-9b25-4f49b1e0b5d7",
-      "width": 1318,
-      "x": -115,
-      "y": 369,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "WIP",
-      "persistentUuid": "5a620edf-abf2-4fb7-b38b-5687b2c5ab13",
-      "width": 0,
-      "x": 743,
-      "y": 489,
-      "zOrder": 807,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "WIP",
-      "persistentUuid": "cb82eb28-bf34-4b76-8047-734ed7077322",
-      "width": 0,
-      "x": 235,
-      "y": 521,
-      "zOrder": 808,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": false,
       "height": 0,
       "keepRatio": true,
@@ -470,9 +386,42 @@
       "name": "WIP",
       "persistentUuid": "59167de0-8f6e-4e2d-b684-b2f708376f7b",
       "width": 0,
-      "x": -215,
-      "y": 537,
+      "x": -388,
+      "y": 563,
       "zOrder": 809,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "kitchen",
+      "persistentUuid": "818351c8-40c5-42ff-a42b-14d8750bbf1a",
+      "width": 0,
+      "x": -587,
+      "y": -158,
+      "zOrder": -1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 360,
+      "customSize": true,
+      "depth": 2,
+      "height": 152,
+      "keepRatio": true,
+      "layer": "",
+      "name": "invisibleWall",
+      "persistentUuid": "10ee1297-2b6d-439e-b376-8dd4c3b7a005",
+      "width": 1512,
+      "x": -457,
+      "y": 410,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1715,6 +1664,66 @@
         "characterSize": 20,
         "color": "255;255;255"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "kitchen",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/kitchen.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 316,
+                        "y": 153
+                      },
+                      {
+                        "x": 1729,
+                        "y": 153
+                      },
+                      {
+                        "x": 1729,
+                        "y": 940
+                      },
+                      {
+                        "x": 316,
+                        "y": 940
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1755,6 +1764,9 @@
       },
       {
         "objectName": "sleep_button"
+      },
+      {
+        "objectName": "kitchen"
       }
     ]
   },
@@ -1775,22 +1787,6 @@
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "player",
-                "impassable",
-                ""
-              ]
-            }
-          ]
-        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [

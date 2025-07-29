@@ -315,17 +315,7 @@
               },
               "parameters": [
                 "player",
-                "invisibleWall",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "player",
-                "WIP",
+                "impassable",
                 ""
               ]
             }

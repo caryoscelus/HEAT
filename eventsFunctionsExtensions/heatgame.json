@@ -1,6 +1,6 @@
 {
   "author": "",
-  "category": "",
+  "category": "Game mechanic",
   "extensionNamespace": "",
   "fullName": "",
   "gdevelopVersion": "",
@@ -32,6 +32,11 @@
     },
     {
       "name": "timeOfDay",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "currentTemperature",
       "type": "number",
       "value": 0
     }
@@ -78,6 +83,15 @@
                 "=",
                 "mod(floor(time), 4)"
               ]
+            },
+            {
+              "type": {
+                "value": "HeatGame::applyHeatDamage"
+              },
+              "parameters": [
+                "",
+                ""
+              ]
             }
           ]
         }
@@ -86,6 +100,106 @@
         {
           "description": "Time difference",
           "name": "dt",
+          "type": "expression"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "fullName": "",
+      "functionType": "Action",
+      "name": "applyHeatDamage",
+      "sentence": "",
+      "events": [],
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "fullName": "",
+      "functionType": "Expression",
+      "name": "getCurrentTemperature",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "currentTemperature"
+              ]
+            }
+          ]
+        }
+      ],
+      "expressionType": {
+        "type": "expression"
+      },
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "fullName": "",
+      "functionType": "Action",
+      "name": "setCurrentTemperature",
+      "sentence": "Sets _PARAM1_ as current (local) temperature",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "currentTemperature",
+                "=",
+                "newTemp"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "",
+          "name": "newTemp",
+          "type": "expression"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "fullName": "",
+      "functionType": "Action",
+      "name": "setTemperature",
+      "sentence": "Sets global temperature to _PARAM1_",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "temperature",
+                "=",
+                "newTemp"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "",
+          "name": "newTemp",
           "type": "expression"
         }
       ],
