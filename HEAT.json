@@ -569,6 +569,62 @@
         "name": "assets/kitchen.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/heart-skip/heart-skip-0000.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/heart-skip/heart-skip-0000.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/heart-skip/heart-skip-0003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/heart-skip/heart-skip-0003.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/heart-skip/heart-skip-0006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/heart-skip/heart-skip-0006.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/heart-skip/heart-skip-0009.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/heart-skip/heart-skip-0009.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/heart-skip/heart-skip-0012.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/heart-skip/heart-skip-0012.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/heart-skip/heart-skip-0015.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/heart-skip/heart-skip-0015.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/heart-skip/heart-skip-0018.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/heart-skip/heart-skip-0018.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -697,7 +753,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "player-right-0000.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "heart",
+                      "x": 117,
+                      "y": 114.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 115,
@@ -733,7 +795,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "player-right-0003.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "heart",
+                      "x": 117,
+                      "y": 114.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 115,
@@ -769,7 +837,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "player-right-0006.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "heart",
+                      "x": 117,
+                      "y": 114.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 115,
@@ -805,7 +879,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "player-right-0009.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "heart",
+                      "x": 117,
+                      "y": 114.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 115,
@@ -853,7 +933,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/player/player-left-0000.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "heart",
+                      "x": 117,
+                      "y": 114.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 115,
@@ -889,7 +975,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/player/player-left-0003.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "heart",
+                      "x": 117,
+                      "y": 114.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 115,
@@ -925,7 +1017,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/player/player-left-0006.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "heart",
+                      "x": 117,
+                      "y": 114.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 115,
@@ -961,7 +1059,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/player/player-left-0009.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "heart",
+                      "x": 117,
+                      "y": 114.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 115,
@@ -997,7 +1101,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/player/player-left-0012.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "heart",
+                      "x": 117,
+                      "y": 114.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 115,
@@ -1045,7 +1155,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/player/player-left-0000.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "heart",
+                      "x": 117,
+                      "y": 114.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 115,
@@ -1081,7 +1197,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/player/player-left-0003.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "heart",
+                      "x": 117,
+                      "y": 114.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 115,
@@ -1117,7 +1239,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/player/player-left-0006.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "heart",
+                      "x": 117,
+                      "y": 114.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 115,
@@ -1153,7 +1281,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/player/player-left-0009.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "heart",
+                      "x": 117,
+                      "y": 114.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 115,
@@ -1189,7 +1323,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/player/player-left-0012.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "heart",
+                      "x": 117,
+                      "y": 114.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 115,
@@ -1237,7 +1377,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/player/player-left-0000.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "heart",
+                      "x": 117,
+                      "y": 114.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 115,
@@ -1273,7 +1419,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/player/player-left-0003.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "heart",
+                      "x": 117,
+                      "y": 114.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 115,
@@ -1309,7 +1461,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/player/player-left-0006.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "heart",
+                      "x": 117,
+                      "y": 114.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 115,
@@ -1345,7 +1503,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/player/player-left-0009.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "heart",
+                      "x": 117,
+                      "y": 114.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 115,
@@ -1381,7 +1545,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/player/player-left-0012.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "heart",
+                      "x": 117,
+                      "y": 114.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 115,
@@ -1429,7 +1599,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/player-tv.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "heart",
+                      "x": 117,
+                      "y": 114.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 115,
@@ -1477,7 +1653,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/player-sleep-0000.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "heart",
+                      "x": 117,
+                      "y": 114.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 115,
@@ -1513,7 +1695,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/player-sleep-0001.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "heart",
+                      "x": 117,
+                      "y": 114.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 115,
@@ -1761,6 +1949,246 @@
         "characterSize": 20,
         "color": "255;255;255"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "heartSkip",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.1,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/heart-skip/heart-skip-0000.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 288.5,
+                    "y": 272
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 114,
+                        "y": 106
+                      },
+                      {
+                        "x": 449,
+                        "y": 106
+                      },
+                      {
+                        "x": 449,
+                        "y": 423
+                      },
+                      {
+                        "x": 114,
+                        "y": 423
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/heart-skip/heart-skip-0003.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 288.5,
+                    "y": 272
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 114,
+                        "y": 106
+                      },
+                      {
+                        "x": 449,
+                        "y": 106
+                      },
+                      {
+                        "x": 449,
+                        "y": 423
+                      },
+                      {
+                        "x": 114,
+                        "y": 423
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/heart-skip/heart-skip-0006.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 288.5,
+                    "y": 272
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 114,
+                        "y": 106
+                      },
+                      {
+                        "x": 449,
+                        "y": 106
+                      },
+                      {
+                        "x": 449,
+                        "y": 423
+                      },
+                      {
+                        "x": 114,
+                        "y": 423
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/heart-skip/heart-skip-0009.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 288.5,
+                    "y": 272
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 114,
+                        "y": 106
+                      },
+                      {
+                        "x": 449,
+                        "y": 106
+                      },
+                      {
+                        "x": 449,
+                        "y": 423
+                      },
+                      {
+                        "x": 114,
+                        "y": 423
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/heart-skip/heart-skip-0012.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 288.5,
+                    "y": 272
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 114,
+                        "y": 106
+                      },
+                      {
+                        "x": 449,
+                        "y": 106
+                      },
+                      {
+                        "x": 449,
+                        "y": 423
+                      },
+                      {
+                        "x": 114,
+                        "y": 423
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/heart-skip/heart-skip-0018.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 288.5,
+                    "y": 272
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 114,
+                        "y": 106
+                      },
+                      {
+                        "x": 449,
+                        "y": 106
+                      },
+                      {
+                        "x": 449,
+                        "y": 423
+                      },
+                      {
+                        "x": 114,
+                        "y": 423
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1780,6 +2208,9 @@
       },
       {
         "objectName": "debug_text"
+      },
+      {
+        "objectName": "heartSkip"
       }
     ]
   },
