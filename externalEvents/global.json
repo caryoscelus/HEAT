@@ -7,6 +7,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Debug",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -126,6 +127,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "HUD",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -192,6 +194,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Action",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -278,6 +281,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Walls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -329,7 +333,8 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Movement",
+      "folded": true,
+      "name": "Movement WASD",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -445,7 +450,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Heart",
+      "name": "Heart effects",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -491,6 +496,18 @@
                 "=",
                 "0.2"
               ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "redHeartSkipEffect",
+                "0",
+                "0",
+                "\"Effects\""
+              ]
             }
           ]
         },
@@ -514,6 +531,15 @@
               },
               "parameters": [
                 "heartSkip",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "redHeartSkipEffect",
                 ""
               ]
             }
